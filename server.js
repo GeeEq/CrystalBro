@@ -36,3 +36,20 @@ app.post("/post", async (req, res) => {
   const val = data.save();
   res.send("posted");
 });
+
+//Fetch Get
+
+app.get("/fetch/:id", function (req, res) {
+  fetchid = reparams.id;
+  monmodel.find({ id: fetchid }, function (err, val) {
+    if (err) {
+      res.send("Erorr");
+    } else {
+      if ((val.length = 0)) {
+        res.send("data does not exist");
+      } else {
+        res.send(val);
+      }
+    }
+  });
+});
