@@ -14,7 +14,6 @@ mangoose.connect("mongodb://localhost:27017/CrystalBro/aliens", {
 // schema
 
 const sch = new Schema({
-  _id: ObectId,
   name: string,
   img: string,
   location: string,
@@ -22,3 +21,18 @@ const sch = new Schema({
 });
 
 const monmodel = mongoose.model("NEWCOL", sch);
+
+// post
+
+app.post("/post", async (req, res) => {
+  console.log("Post function");
+
+  const data = new monmodel({
+    name: string,
+    img: string,
+    location: string,
+    description: string,
+  });
+  const val = data.save();
+  res.send("posted");
+});
