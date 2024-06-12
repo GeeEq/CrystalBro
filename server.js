@@ -1,55 +1,57 @@
 const express = require("express");
+const cors = require("cors");
+const mongodb = require("mongodb");
+// const MongoClient = mongodb.MongoClient;
+// const PORT = 3000;
 const app = express();
-const mangoose = require("mangoose");
-const { Schema } = mangoose;
+app.use(cors());
 app.use(express.json());
 
-// DB jungtis
+const { MongoClient } = require("mongodb");
 
-mangoose.connect("mongodb://localhost:27017/CrystalBro/aliens", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+const connectionString =
+  "mongodb+srv://sielaleis:masapiqua589@cluster0.qsim4gh.mongodb.net/";
+
+const client = new MongoClient(connectionString);
+
+app.get("/", (req, res) => {
+  res.send({ msg: "working" });
 });
 
-// schema
-
-const sch = new Schema({
-  name: string,
-  img: string,
-  location: string,
-  description: string,
+app.get("/CrystalBro/aliens", async (re, res) => {
+  try {
+    const con = await client.connect();
+    const data = await con
+      .db("CrystalBro")
+      .collenction("aliens")
+      .find()
+      .sort({ age: req.params.order?.toLowerCase() === "dsc" ? -1 : 1 })
+      .toArray();
+    await con.close();
+    return res.send(data);
+  } catch (err) {
+    return res.status(500).send(err);
+  }
 });
+app.post("/aliens", async (req, res) => {
+  if (!req.body.name || !req.body.age || !req.body.type) {
+    return res.status(400).send({ err: "Incorrect data" });
+  }
 
-const monmodel = mongoose.model("NEWCOL", sch);
-
-// post
-
-app.post("/post", async (req, res) => {
-  console.log("Post function");
-
-  const data = new monmodel({
-    name: string,
-    img: string,
-    location: string,
-    description: string,
-  });
-  const val = data.save();
-  res.send("posted");
+  try {
+    const con = await client.connect();
+    const dbRes = await con.db("aliens").collection("aliens").insertOne({
+      name: req.body.name,
+      location: req.body.location,
+      description: req.body.description,
+      img: req.body.img,
+    });
+    await con.close();
+    return res.send(dbRes);
+  } catch (err) {
+    return res.status(500).send(err);
+  }
 });
-
-//Fetch Get
-
-app.get("/fetch/:id", function (req, res) {
-  fetchid = reparams.id;
-  monmodel.find({ id: fetchid }, function (err, val) {
-    if (err) {
-      res.send("Erorr");
-    } else {
-      if ((val.length = 0)) {
-        res.send("data does not exist");
-      } else {
-        res.send(val);
-      }
-    }
-  });
-});
+// app.listen(PORT, () => console.timeLog(`Server is running ${PORT}`));
+const port = process.env.PORT || 8000;
+app.listen(port, () => console.log(`Server is running on port ${port}`));
