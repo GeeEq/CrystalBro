@@ -25,7 +25,7 @@ app.get("/CrystalBro/aliens", async (re, res) => {
       .db("CrystalBro")
       .collenction("aliens")
       .find()
-      .sort({ age: req.params.order?.toLowerCase() === "dsc" ? -1 : 1 })
+      .sort({ _id: req.params.order?.toLowerCase() === "dsc" ? -1 : 1 })
       .toArray();
     await con.close();
     return res.send(data);
