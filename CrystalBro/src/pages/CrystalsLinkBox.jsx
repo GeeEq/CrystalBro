@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import "./DragonsLinkBox.css";
+import "./CrystalsLinkBox.css";
 import { Spacer } from "./Spacer";
 
-export function DragonsLinkBox() {
+export function CrystalsLinkBox() {
   return (
     <>
-      <div className="dragonsBox">
+      <div className="crystalsBox">
         <div className="boxShine"></div>
-        <Link to={"/dragons"} className="dragonsLink">
-          <p>Dragons</p>
+        <Link to={"/crystals"} className="crystalsLink">
+          <p>Crystals</p>
         </Link>
       </div>
       <Spacer />
