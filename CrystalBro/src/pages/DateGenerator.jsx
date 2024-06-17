@@ -6,7 +6,7 @@ function getDate() {
   return `${year}`;
 }
 
-function DateGen() {
+export function DateGen() {
   const [currentDate, setCurrentDate] = useState(getDate());
 
   return (
