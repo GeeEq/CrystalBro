@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0;
+
+  .logo {
+    background-image: url("../assets/logo.png");
+    width: 410px;
+    height: 410px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: 10px;
+  }
+
+  /* .navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  } */
+  .navText {
+    font-family: "Playwrite SK", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+  }
+}
