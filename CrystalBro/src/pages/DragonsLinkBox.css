@@ -1,16 +1,15 @@
-.alienBox {
+.dragonsBox {
   background-color: white;
   width: 355px;
-  height: 510px;
+  height: 470px;
   padding-top: 5px;
   box-sizing: border-box;
   border-radius: 5%;
-  margin-bottom: 20px;
 }
-.alienLink {
-  background-image: url("../assets/alienLogo.jpg");
+.dragonsLink {
+  background-image: url("../assets/dragonsLogo.jpg");
   width: 349px;
-  height: 495px;
+  height: 453px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -19,7 +18,7 @@
   text-decoration: none;
   position: absolute;
   margin: 4px;
-  padding: 5px;
+  /* padding: 5px; */
   p {
     color: white;
     text-align: center;
@@ -28,6 +27,6 @@
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    margin-top: 125%;
+    margin-top: 108%;
   }
 }

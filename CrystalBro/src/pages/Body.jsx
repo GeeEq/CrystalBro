@@ -1,21 +1,16 @@
 import { Link } from "react-router-dom";
 import "../pages/Body.css";
 import { AlienLinkBox } from "./AlienLinkBox";
+import { DragonsLinkBox } from "./DragonsLinkBox";
+import { Spacer } from "./Spacer";
 
 export function BodyPage() {
   return (
     <>
       <div className="bodyLinks">
-        {/* <div className="boxShine"></div>
-
-        <Link to={"/aliens"} className="alienLink">
-          <p>Aliens</p>
-        </Link> */}
+        <Spacer />
         <AlienLinkBox />
-
-        <Link to={"/dragons"} className="dragonLink">
-          <p>Dragons</p>
-        </Link>
+        <DragonsLinkBox />
       </div>
     </>
   );

@@ -1,0 +1,10 @@
+.spacer {
+  background-image: url("../assets/spacer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  margin: 0 0 10px 0;
+}

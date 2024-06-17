@@ -13,18 +13,9 @@ nav {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     margin: 10px;
   }
 
-  /* .navLinks {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  } */
   .navText {
     font-family: "Playwrite SK", cursive;
     font-optical-sizing: auto;
