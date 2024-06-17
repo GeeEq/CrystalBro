@@ -7,7 +7,7 @@ export function Navigation() {
     <header>
       <nav>
         <div className="logo">
-          {/* <Link to={"/home"} className="homeLink"></Link> */}
+          <Link to={"/"} className="homeLink"></Link>
         </div>
         <p className="navText">Realease Your Imagination</p>
         {/* <div className="navLinks">

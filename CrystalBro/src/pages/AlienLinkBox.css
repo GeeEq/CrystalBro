@@ -1,0 +1,35 @@
+/* .alienBox { */
+.alienBox {
+  /* position: relative; */
+  background-color: white;
+  width: 355px;
+  height: 510px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+.alienLink {
+  background-image: url("../assets/alienLogo.jpg");
+  width: 349px;
+  height: 495px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5%;
+  box-sizing: border-box;
+  text-decoration: none;
+  position: absolute;
+  margin: 4px;
+  padding: 5px;
+  p {
+    color: white;
+    text-align: center;
+    font-family: "Playwrite SK", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 125%;
+  }
+}
+/* } */

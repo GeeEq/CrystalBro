@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 // import Aliens from "./pages/Aliens";
 import "./App.css";
 import { Navigation } from "./pages/Navigation";
@@ -12,11 +12,9 @@ export function App() {
         <Navigation />
         <BodyPage />
       </div>
-      {/* <Aliens></Aliens> */}
       <footer>
-        <p>
-          @ Copy Right Crystal Bro <DateGen />
-        </p>
+        <p>Copy Right @ Crystal Bro </p>
+        <DateGen />
       </footer>
     </>
   );

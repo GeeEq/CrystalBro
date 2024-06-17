@@ -9,7 +9,7 @@ export function PageRout() {
       <Routes>
         <Route path="/aliens" Component={Aliens} />
         <Route path="/dragons" Component={Dragons} />
-        <Route path="/home" Component={Home} />
+        <Route path="/" Component={Home} />
       </Routes>
     </>
   );

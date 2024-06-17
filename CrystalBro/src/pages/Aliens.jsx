@@ -44,12 +44,6 @@ export default function Aliens() {
             );
           })}
         </div>
-        <footer>
-          <>
-            Copyright @ VetBee
-            <span>{<DateGen />}</span>. All rights reserved.
-          </>
-        </footer>
       </>
     )
   );
