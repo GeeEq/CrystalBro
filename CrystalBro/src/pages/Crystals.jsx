@@ -10,10 +10,10 @@ export default function Crystals() {
       <>
         <div className="crystalsListAddBar">
           {" "}
-          <p className="crystalsList">Aliens List</p>
+          <p className="crystalsList">Crystals List</p>
           <button className="addcrystals">
             <Link to={"/crystals"} className="link">
-              ADD ALIEN
+              ADD Crystals
             </Link>
           </button>
         </div>
