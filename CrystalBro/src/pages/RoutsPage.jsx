@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import { Aliens } from "./pages/Aliens";
-import { Dragons } from "./pages/Dragons";
-import { Home } from "./pages/Home";
+import { Aliens } from "./Aliens";
+import { Dragons } from "./Dragons";
+import { Home } from "./Home";
 
 export function PageRout() {
   return (

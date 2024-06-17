@@ -5,10 +5,13 @@ export function BodyPage() {
   return (
     <>
       <div className="bodyLinks">
-        <Link to={"/aliens"} className="orangeLink">
+        <div className="boxShine"></div>
+
+        <Link to={"/aliens"} className="alienLink">
           <p>Aliens</p>
-        </Link>{" "}
-        <Link to={"/dragons"} className="orangeLink">
+        </Link>
+
+        <Link to={"/dragons"} className="dragonLink">
           <p>Dragons</p>
         </Link>
       </div>

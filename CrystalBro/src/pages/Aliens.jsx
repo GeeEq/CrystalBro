@@ -1,6 +1,6 @@
 import { useData } from "../backend/FetchData";
 import { Link } from "react-router-dom";
-import DateGen from "../DateGenerator";
+import DateGen from "./DateGenerator";
 
 export default function Aliens() {
   const aliens = useData("aliens");
