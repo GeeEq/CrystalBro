@@ -25,24 +25,23 @@ nav {
     display: block;
     background-image: linear-gradient(
       to right top,
-      #ee2561,
+      /* #ee2561,
       #e945cb,
-      #c273c6,
-      #b879d1,
-      #ab7edb,
-      #8991f0,
+      #c273c6, */ #e1dde2,
+      /* #ab7edb, */ #8991f0,
       #5ca3fc,
       #00b2ff,
       #00cdff,
       #00e3e5,
       #00f3aa,
-      #42fc0f
+      #42fc0f,
+      #e1dde2
     );
     color: transparent;
     background-clip: text;
     background-size: 190%;
     height: 35px;
-    animation: text-animation 10s infinite alternate;
+    animation: text-animation 5s infinite alternate;
   }
 }
 @keyframes text-animation {
