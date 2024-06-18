@@ -1,7 +1,7 @@
 import { useData } from "../backend/FetchData";
 import { Link } from "react-router-dom";
 
-export default function Crystals() {
+export function Crystals() {
   const crystals = useData("crystals");
 
   console.log(crystals);

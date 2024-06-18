@@ -1,8 +1,7 @@
 import { useData } from "../backend/FetchData";
 import { Link } from "react-router-dom";
-import DateGen from "./DateGenerator";
 
-export default function Aliens() {
+export function Aliens() {
   const aliens = useData("aliens");
 
   console.log(aliens);
@@ -10,7 +9,6 @@ export default function Aliens() {
     aliens && (
       <>
         <div className="aliensListAddBar">
-          {" "}
           <p className="aliensList">Aliens List</p>
           <button className="addAlien">
             <Link to={"/aliens"} className="link">

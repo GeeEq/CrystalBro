@@ -1,6 +1,8 @@
 import "./BurgerMenu.css";
 import { useState } from "react";
 // import { Navigation } from "./Navigation";
+import { Link } from "react-router-dom";
+import { PageRout } from "./RoutsPage";
 
 export function BurgerMenu() {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
@@ -24,7 +26,20 @@ export function BurgerMenu() {
           <div className={burger_class}></div>
           <div className={burger_class}></div>
         </div>
-        {/* <h3>Crystal Bro</h3> */}
+        <ul>
+          <li className="pageLink">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="pageLink">
+            <Link to="/aliens">Aliens</Link>
+          </li>
+          <li className="pageLink">
+            <Link to="/dragons">Dragons</Link>
+          </li>
+          <li className="pageLink">
+            <Link to="/crystals">Crystals</Link>
+          </li>
+        </ul>
       </nav>
       <div className={menu_class}></div>
     </div>
