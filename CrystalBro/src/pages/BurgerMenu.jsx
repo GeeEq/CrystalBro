@@ -23,8 +23,9 @@ export function BurgerMenu() {
           <div className={burger_class}></div>
           <div className={burger_class}></div>
         </div>
+        {/* <h3>Crystal Bro</h3> */}
       </nav>
-      <div className="mane_class"></div>
+      <div className={menu_class}></div>
     </div>
   );
 }
