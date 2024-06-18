@@ -9,11 +9,13 @@ import { BurgerMenu } from "./pages/BurgerMenu";
 export function App() {
   return (
     <>
-      <BurgerMenu />
-      <div>
+      <div className="burNav">
+        <BurgerMenu />
+      </div>
+      <main>
         <Navigation />
         <BodyPage />
-      </div>
+      </main>
       <footer>
         <p>Copy Right @ Crystal Bro </p>
         <DateGen />

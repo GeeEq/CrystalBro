@@ -2,4 +2,11 @@ footer {
   text-align: center;
   font-size: small;
   padding-bottom: 20px;
+  position: sticky;
+}
+/* nav {
+  padding-right: 50px;
+} */
+.burNav {
+  opacity: 0.5;
 }

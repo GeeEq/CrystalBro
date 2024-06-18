@@ -2,21 +2,22 @@
   margin: 0;
   box-sizing: border-box;
 }
-h3 {
+/* h3 {
   font-family: "Playwrite SK", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   margin-right: 20px;
-}
+} */
 nav {
   width: 100%;
-  height: 4.4rem;
-  /* background-color: antiquewhite; */
+  height: 4rem;
+  background-color: #13112c;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 1em;
+  padding: 0.7em;
+  position: fixed;
 }
 .burger-menu {
   height: 80%;
@@ -26,6 +27,7 @@ nav {
   align-items: flex-end;
   justify-content: space-between;
   cursor: pointer;
+  opacity: 1;
   /* background-color: aquamarine; */
 }
 
@@ -39,10 +41,16 @@ nav {
 .menu {
   width: 50%;
   height: 100vh;
-  background-color: rgb(101, 54, 119);
+  background-color: #13112c;
   position: absolute;
   top: 0;
   z-index: -1;
+}
+.menu_class {
+  /* opacity: 0.5; */
+  background-color: white;
+  width: 200px;
+  height: 200px;
 }
 
 /* slide*/
@@ -62,7 +70,7 @@ nav {
   transition: ease-out 0.5s;
 }
 .burger-bar.clicked:nth-child(2) {
-  transform: scale(0.1);
+  transform: scale(0);
   transition: ease-out 0.5s;
 }
 .burger-bar.clicked:nth-child(3) {

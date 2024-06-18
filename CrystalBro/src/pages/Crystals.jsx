@@ -9,7 +9,6 @@ export default function Crystals() {
     crystals && (
       <>
         <div className="crystalsListAddBar">
-          {" "}
           <p className="crystalsList">Crystals List</p>
           <button className="addcrystals">
             <Link to={"/crystals"} className="link">
