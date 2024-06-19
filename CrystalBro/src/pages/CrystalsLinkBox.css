@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border-radius: 5%;
   margin-bottom: 20px;
+  z-index: -1;
 }
 .crystalsLink {
   background-image: url("../assets/crystalLogo.jpg");
@@ -20,6 +21,8 @@
   position: absolute;
   margin: 4px;
   padding: 5px;
+  z-index: -2;
+
   p {
     color: rgb(253, 253, 253);
     text-align: center;
@@ -30,4 +33,7 @@
     font-size: 40px;
     margin-top: 78%;
   }
+}
+.boxShine {
+  z-index: -2;
 }

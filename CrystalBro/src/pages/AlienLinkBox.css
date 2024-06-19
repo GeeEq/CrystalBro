@@ -7,6 +7,7 @@
   border-radius: 5%;
   margin-bottom: 20px;
   position: relative;
+  z-index: -1;
 }
 .alienLink {
   background-image: url("../assets/alienLogo.jpg");
@@ -21,6 +22,7 @@
   position: absolute;
   margin: 4px;
   padding: 5px;
+  z-index: -2;
   p {
     color: white;
     text-align: center;
@@ -31,4 +33,7 @@
     font-size: 40px;
     margin-top: 125%;
   }
+}
+.boxShine {
+  z-index: -2;
 }

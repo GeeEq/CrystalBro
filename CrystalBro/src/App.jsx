@@ -5,6 +5,7 @@ import { Navigation } from "./pages/Navigation";
 import { BodyPage } from "./pages/Body";
 import { DateGen } from "./pages/DateGenerator";
 import { BurgerMenu } from "./pages/BurgerMenu";
+import { PageRout } from "./pages/RoutsPage";
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
       <main>
         <Navigation />
         <BodyPage />
+        <PageRout />
       </main>
       <footer>
         <p>Copy Right @ Crystal Bro </p>

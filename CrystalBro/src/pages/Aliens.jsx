@@ -23,13 +23,13 @@ export function Aliens() {
               <div key={item.id} className="aliensCard">
                 <h3>{item.name}</h3>
                 <p>{item.type}</p>
-                <P>{item.description}</P>
+                <p>{item.description}</p>
                 <p>{item.habitat}</p>
                 <p>{item.imgUrl}</p>
                 <div className="btn">
-                  <button className="viewLog">
-                    <Link to={"/aliens"} className="link">
-                      View Log
+                  <button className="edit">
+                    <Link to={"/edit"} className="link">
+                      Edit
                     </Link>
                   </button>
                   <button className="delete">

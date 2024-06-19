@@ -5,6 +5,7 @@
   padding-top: 5px;
   box-sizing: border-box;
   border-radius: 5%;
+  z-index: -2;
 }
 .dragonsLink {
   background-image: url("../assets/dragonsLogo.jpg");
