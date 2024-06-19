@@ -13,5 +13,6 @@ footer {
   padding-right: 50px;
 } */
 .burNav {
-  opacity: 0.7;
+  opacity: 0.9;
+  /* position: inherit; */
 }

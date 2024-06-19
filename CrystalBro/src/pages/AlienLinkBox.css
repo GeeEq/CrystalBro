@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border-radius: 5%;
   margin-bottom: 20px;
+  position: relative;
 }
 .alienLink {
   background-image: url("../assets/alienLogo.jpg");

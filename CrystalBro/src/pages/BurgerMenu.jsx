@@ -8,6 +8,8 @@ export function BurgerMenu() {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const updateMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("burger-bar clicked");
@@ -18,7 +20,6 @@ export function BurgerMenu() {
     }
     setIsMenuClicked(!isMenuClicked);
   };
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div style={{ width: "100%", height: "100hv" }}>
       <nav>
@@ -33,11 +34,7 @@ export function BurgerMenu() {
           <div className={burger_class}></div>
           <div className={burger_class}></div>
         </div>
-        {/* <div className="menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div> */}
+
         <ul className={menuOpen ? "open" : ""}>
           <li className="pageLink">
             <NavLink to="/">Home</NavLink>
