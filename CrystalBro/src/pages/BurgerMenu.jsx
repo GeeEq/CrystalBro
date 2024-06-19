@@ -1,8 +1,8 @@
 import "./BurgerMenu.css";
 import { useState } from "react";
 // import { Navigation } from "./Navigation";
-import { Link } from "react-router-dom";
-import { PageRout } from "./RoutsPage";
+import { Link, NavLink } from "react-router-dom";
+// import { PageRout } from "./RoutsPage";
 
 export function BurgerMenu() {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
@@ -18,26 +18,38 @@ export function BurgerMenu() {
     }
     setIsMenuClicked(!isMenuClicked);
   };
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div style={{ width: "100%", height: "100hv" }}>
       <nav>
-        <div className="burger-menu" onClick={updateMenu}>
+        <div
+          className="burger-menu"
+          onClick={() => {
+            updateMenu();
+            setMenuOpen(!menuOpen);
+          }}
+        >
           <div className={burger_class}></div>
           <div className={burger_class}></div>
           <div className={burger_class}></div>
         </div>
-        <ul>
+        {/* <div className="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> */}
+        <ul className={menuOpen ? "open" : ""}>
           <li className="pageLink">
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="pageLink">
-            <Link to="/aliens">Aliens</Link>
+            <NavLink to="/aliens">Aliens</NavLink>
           </li>
           <li className="pageLink">
-            <Link to="/dragons">Dragons</Link>
+            <NavLink to="/dragons">Dragons</NavLink>
           </li>
           <li className="pageLink">
-            <Link to="/crystals">Crystals</Link>
+            <NavLink to="/crystals">Crystals</NavLink>
           </li>
         </ul>
       </nav>
