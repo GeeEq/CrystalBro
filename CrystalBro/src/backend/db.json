@@ -133,309 +133,261 @@
   "dragons": [
     {
       "id": 1,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Ontropucos",
+      "type": "scales",
+      "description": "always hungry",
+      "habitat": "mountains",
+      "imgUrl": "https://as2.ftcdn.net/v2/jpg/05/81/22/27/1000_F_581222777_xh0Z8b4tamzHhYvNgFFkOOyB18PXlymk.jpg"
     },
     {
       "id": 2,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Ofi",
+      "type": "scales",
+      "description": "good dude",
+      "habitat": "space",
+      "imgUrl": "https://i.pinimg.com/736x/ed/46/b9/ed46b9d740b622fc45b85c67e5e41955.jpg"
     },
     {
       "id": 3,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Rufus",
+      "type": "scales",
+      "description": "yeals a lot",
+      "habitat": "skies",
+      "imgUrl": "https://img.freepik.com/premium-photo/dragon-sky-with-clouds-moon_295754-526.jpg"
     },
     {
       "id": 4,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Buf",
+      "type": "skin",
+      "description": "windy",
+      "habitat": "skies",
+      "imgUrl": "https://images.nightcafe.studio/jobs/uk4yg1K7F2Xz6C1GiHtG/uk4yg1K7F2Xz6C1GiHtG--1--4tdcm.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 5,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Ofus",
+      "type": "transparent",
+      "description": "transparen most of the time",
+      "habitat": "skies",
+      "imgUrl": "https://images.nightcafe.studio/jobs/uk4yg1K7F2Xz6C1GiHtG/uk4yg1K7F2Xz6C1GiHtG--1--4tdcm.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 6,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Galacticon",
+      "type": "scales",
+      "description": "hungry",
+      "habitat": "cosmos",
+      "imgUrl": "https://techtrendtomorrow.com/wp-content/uploads/2024/04/ai-art-obsidian-dragon-in-space-cosmic-eyes.webp"
     },
     {
       "id": 7,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Turbo Tut",
+      "type": "scales",
+      "description": "dangerous",
+      "habitat": "mountains",
+      "imgUrl": "https://images.nightcafe.studio/jobs/XDrRc2x4Ncrj7eeuiMgt/XDrRc2x4Ncrj7eeuiMgt--1--T6PD0_2x.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 8,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Sumok",
+      "type": "transparent",
+      "description": "smoke like structure",
+      "habitat": "smoke",
+      "imgUrl": "https://images.nightcafe.studio/jobs/qU8yY9hl77kWkuJmZRKH/qU8yY9hl77kWkuJmZRKH--1--dcjbr.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 9,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Thundaricon",
+      "type": "scales",
+      "description": "thunder dweller",
+      "habitat": "skies",
+      "imgUrl": "https://images.nightcafe.studio/jobs/Dg8ehGSct8Su7uK6PoBc/Dg8ehGSct8Su7uK6PoBc--1--9gtna.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 10,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Hugof",
+      "type": "scales",
+      "description": "friendly",
+      "habitat": "forest",
+      "imgUrl": "https://images.nightcafe.studio/jobs/BkP5inagepqFXu44QoST/BkP5inagepqFXu44QoST--1--3pckl.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 11,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Poof",
+      "type": "scales",
+      "description": "easy going",
+      "habitat": "space",
+      "imgUrl": "https://images.nightcafe.studio/jobs/fj1GR2qfezHzkEl1xZIj/fj1GR2qfezHzkEl1xZIj--1--w28pj.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 12,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Amethymus",
+      "type": "crystal",
+      "description": "covered in crystals",
+      "habitat": "mountains",
+      "imgUrl": "https://images.nightcafe.studio/jobs/wWIz2n0FUbWnf32xDsH6/wWIz2n0FUbWnf32xDsH6--1--h1hng.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 13,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Godzilla",
+      "type": "scales",
+      "description": "dangerous",
+      "habitat": "space",
+      "imgUrl": "https://images.nightcafe.studio/jobs/HMBFzePtKIsub2qokIs6/HMBFzePtKIsub2qokIs6-OMbYT.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 14,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Fir",
+      "type": "scales",
+      "description": "fire breath",
+      "habitat": "mountains",
+      "imgUrl": "https://images.nightcafe.studio/jobs/9XmiZ476WycGS6Syrj4H/9XmiZ476WycGS6Syrj4H--3--crqla_4x.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 15,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Ulof",
+      "type": "feathers",
+      "description": "colorful",
+      "habitat": "imagination",
+      "imgUrl": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/colorful-dragon-kailooma-x-thedol.jpg"
     },
     {
       "id": 16,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
-    },
-    {
-      "id": 17,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
-    },
-    {
-      "id": 18,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
-    },
-    {
-      "id": 19,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Puffy",
+      "type": "feathers",
+      "description": "colorful",
+      "habitat": "imagination",
+      "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/362ab4d7-6228-4d21-a4f5-215c1c6ce6b7/dg0o8vp-dace7592-2301-4641-a92e-322e6c5d9cb7.png/v1/fill/w_800,h_1428,q_80,strp/dragon_wall_art_colorful_dragon_by_aiartshop_dg0o8vp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQyOCIsInBhdGgiOiJcL2ZcLzM2MmFiNGQ3LTYyMjgtNGQyMS1hNGY1LTIxNWMxYzZjZTZiN1wvZGcwbzh2cC1kYWNlNzU5Mi0yMzAxLTQ2NDEtYTkyZS0zMjJlNmM1ZDljYjcucG5nIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.v0-a62LtLdexEFwgF3FRiIjEzk1HArBUzb7SB3opLhY"
     }
   ],
   "crystals": [
     {
       "id": 1,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Ade",
+      "type": "quartz",
+      "description": "sharp edges",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/magical-crystal-with-swirling-colors-digital-art-style-illustration_812426-6499.jpg"
     },
     {
       "id": 2,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Der",
+      "type": "quartz",
+      "description": "sharp edges",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/magical-crystal-with-swirling-colors-digital-art-style-illustration_812426-6362.jpg"
     },
     {
       "id": 3,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Fret",
+      "type": "quartz",
+      "description": "sharp edges",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/magical-crystal-with-swirling-colors-digital-art-style-illustration_812426-6421.jpg"
     },
     {
       "id": 4,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Aqer",
+      "type": "quartz",
+      "description": "shape shifter",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/illustration-crystal-clear-beautiful-gemstone-ai-generated-content_899027-1821.jpg"
     },
     {
       "id": 5,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Cil",
+      "type": "mixed",
+      "description": "civilization",
+      "habitat": "mountains",
+      "imgUrl": "https://images.nightcafe.studio/jobs/LD5SoxTN83qB376Fjbya/LD5SoxTN83qB376Fjbya.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 6,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Fert",
+      "type": "mixed",
+      "description": "civilization",
+      "habitat": "mountains",
+      "imgUrl": "https://images.nightcafe.studio/jobs/mOi4R4DoFkZ66IDy4TUT/mOi4R4DoFkZ66IDy4TUT_8.9286x.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 7,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Defr",
+      "type": "quartz",
+      "description": "shape shifter",
+      "habitat": "mountains",
+      "imgUrl": "https://images.nightcafe.studio/jobs/xXuO2T2rXbSh0LwlK2VI/xXuO2T2rXbSh0LwlK2VI--1--9k4yh.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 8,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Qwer",
+      "type": "quartz",
+      "description": "civilization",
+      "habitat": "mountains",
+      "imgUrl": "https://images.nightcafe.studio/jobs/SWsbkWzKEAoTZzghkVYs/SWsbkWzKEAoTZzghkVYs--1--vh94e_4x.jpg?tr=w-1600,c-at_max"
     },
     {
       "id": 9,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Pink",
+      "type": "quartz",
+      "description": "sharp edges",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/magical-landscape-made-amethyst-crystals_665280-14159.jpg"
     },
     {
       "id": 10,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Eder",
+      "type": "quartz",
+      "description": "sharp edges",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/magical-landscape-made-amethyst-crystals_665280-14155.jpg"
     },
     {
       "id": 11,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Nefrt",
+      "type": "quartz",
+      "description": "sharp edges",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/purple-crystals-amethyst-black-background-with-spotlight_872754-3566.jpg"
     },
     {
       "id": 12,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Lifg",
+      "type": "quartz",
+      "description": "shape shifter",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/brightly-colored-crystals-are-rock-dark-room-generative-ai_902639-49076.jpg"
     },
     {
       "id": 13,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Gerfty",
+      "type": "quartz",
+      "description": "shape shifter",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/close-up-crystals-with-word-crystals-it_853177-9392.jpg"
     },
     {
       "id": 14,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Kelo",
+      "type": "quartz",
+      "description": "sharp edges",
+      "habitat": "mountains",
+      "imgUrl": "https://img.freepik.com/premium-photo/heap-crystals-jewels_717440-1435.jpg"
     },
     {
       "id": 15,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Dubner",
+      "type": "quartz",
+      "description": "shape shifter",
+      "habitat": "mountains",
+      "imgUrl": "https://cdn.pixabay.com/photo/2023/06/18/01/29/ai-generated-8071009_1280.png"
     },
     {
       "id": 16,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
-    },
-    {
-      "id": 17,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
-    },
-    {
-      "id": 18,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
-    },
-    {
-      "id": 19,
-      "name": "",
-      "type": "",
-      "description": "",
-      "habitat": "",
-      "imgUrl": ""
+      "name": "Jero",
+      "type": "quartz",
+      "description": "sharp edges",
+      "habitat": "mountains",
+      "imgUrl": "https://cdn.pixabay.com/photo/2024/04/10/18/17/ai-generated-8688566_1280.jpg"
     }
   ]
 }
