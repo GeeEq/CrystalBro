@@ -15,9 +15,9 @@ export function App() {
       </div>
       <main>
         <Navigation />
-        <PageRout />
 
         <BodyPage />
+        <PageRout />
       </main>
       <footer>
         <p>Copy Right @ Crystal Bro </p>

@@ -1,6 +1,7 @@
 import { useData } from "../backend/FetchData";
 import { Link, useParams } from "react-router-dom";
 import "./Aliens.css";
+// import { AddAliens } from "./AddAliens";
 
 export function Aliens() {
   const aliens = useData("aliens");
