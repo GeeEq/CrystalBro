@@ -6,6 +6,25 @@
   margin: 30px;
   gap: 10px;
 }
+.addAlien {
+  padding: 8px 10px;
+  background-color: blueviolet;
+  border-style: none;
+  border-radius: 10px;
+}
+h1 {
+  padding: 10px;
+}
+.addAlien:hover {
+  background-color: rgb(71, 11, 128);
+  color: aquamarine;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
 .aliensWrapper {
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +37,7 @@
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  border: 1px solid white;
+  border: 1px solid rgb(196, 30, 154);
   border-radius: 15px;
   width: 40vh;
   height: auto;
@@ -31,4 +50,35 @@
   height: 450px;
   object-fit: cover;
   border-radius: 10px;
+}
+.delete {
+  padding: 5px 10px;
+  font-size: larger;
+  background-color: blueviolet;
+  border-radius: 10px;
+  border-style: none;
+}
+.delete:hover {
+  background-color: rgb(71, 11, 128);
+  color: aquamarine;
+  cursor: pointer;
+}
+h3 {
+  font-size: x-large;
+}
+p {
+  font-size: larger;
+}
+
+@media (min-width: 480px) {
+  .imgURL {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgb(82, 3, 75);
+  }
+  .aliensCard {
+    width: 50vh;
+  }
 }

@@ -15,7 +15,7 @@ export function Aliens() {
     aliens && (
       <>
         <div className="aliensListAddBar">
-          <h2 className="aliensList">Aliens List</h2>
+          <h1 className="aliensList">Aliens List</h1>
           <button className="addAlien">
             <Link to={"/addAliens"} className="link">
               ADD ALIEN
@@ -34,16 +34,7 @@ export function Aliens() {
                 <p>Description: {item.description}</p>
                 <p>Habitat: {item.habitat}</p>
                 <div className="btn">
-                  {/* <button className="edit">
-                    <Link to={"/edit"} className="link">
-                      Edit
-                    </Link>
-                  </button> */}
-                  <button className="delete">
-                    <Link to={"/delete"} className="orangeLink">
-                      Delete
-                    </Link>
-                  </button>
+                  <button className="delete">Delete</button>
                 </div>
               </div>
             );
