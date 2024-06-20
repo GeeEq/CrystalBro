@@ -4,6 +4,7 @@ import "./Aliens.css";
 
 export function Aliens() {
   const aliens = useData("aliens");
+
   const myParams = useParams();
   const alienData = useData("" + myParams.aliens);
   console.log(alienData);
@@ -27,10 +28,11 @@ export function Aliens() {
             return (
               <div key={item.id} className="aliensCard">
                 <h3>{item.name}</h3>
+                <img src={item.imgUrl} className="imgURL" />
+
                 <p>Type: {item.type}</p>
                 <p>Description: {item.description}</p>
                 <p>Habitat: {item.habitat}</p>
-                <p>{item.imgUrl}</p>
                 <div className="btn">
                   {/* <button className="edit">
                     <Link to={"/edit"} className="link">

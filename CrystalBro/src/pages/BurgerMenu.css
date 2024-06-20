@@ -63,6 +63,7 @@ nav {
 }
 nav ul {
   display: flex;
+  justify-content: center;
 }
 nav ul li {
   list-style: none;
@@ -142,6 +143,12 @@ nav ul li a:not(.active):hover {
     cursor: pointer;
     margin-top: 15px;
   }
+  nav .deskLogo {
+    background-image: url("../assets/logo.png");
+    width: 20px;
+    height: 20px;
+    display: none;
+  }
   .burger-bar.clicked:nth-child(1) {
     transform: rotate(45deg) translate(0.5em, 1em);
     transition: ease-out 0.5s;
@@ -159,5 +166,34 @@ nav ul li a:not(.active):hover {
 @media (min-width: 480px) {
   .burger-menu {
     display: none;
+  }
+  nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+
+    .deskLogo {
+      background-image: url("../assets/logo.png");
+      width: 60px;
+      height: 60px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+  }
+}
+@media (min-width: 640px) {
+  nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    position: fixed;
   }
 }

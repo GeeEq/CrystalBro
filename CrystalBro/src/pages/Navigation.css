@@ -59,3 +59,8 @@
     background-position: 0% 50%;
   }
 }
+@media (min-width: 480px) {
+  .logo {
+    display: none;
+  }
+}

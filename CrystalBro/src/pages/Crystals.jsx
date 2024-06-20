@@ -27,10 +27,10 @@ export function Crystals() {
             return (
               <div key={item.id} className="crystalsCard">
                 <h3>{item.name}</h3>
+                <img src={item.imgUrl} className="imgURL" />
                 <p>Type: {item.type}</p>
                 <p>Description: {item.description}</p>
                 <p>Habitat: {item.habitat}</p>
-                <p>{item.imgUrl}</p>
                 <div className="btn">
                   {/* <button className="viewLog">
                     <Link to={"/crystals"} className="crystalsLink">

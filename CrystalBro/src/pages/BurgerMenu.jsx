@@ -35,6 +35,8 @@ export function BurgerMenu() {
           <div className={burger_class}></div>
         </div>
 
+        <div className="deskLogo"></div>
+
         <ul className={menuOpen ? "open" : ""}>
           <li className="pageLink">
             <NavLink to="/">Home</NavLink>
