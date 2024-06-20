@@ -15,32 +15,31 @@
     background-position: center;
     margin: -20px 10px 10px 10px;
   }
-
-  .navText {
-    font-family: "Playwrite SK", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: larger;
-    display: block;
-    background-image: linear-gradient(
-      to right top,
-      #8991f0,
-      #5ca3fc,
-      #00b2ff,
-      #00cdff,
-      #00e3e5,
-      #00f3aa,
-      #42fc0f,
-      #eeb005,
-      #fdfcfd
-    );
-    color: transparent;
-    background-clip: text;
-    background-size: 190%;
-    height: 35px;
-    animation: text-animation 4s infinite alternate;
-  }
+}
+.navText {
+  font-family: "Playwrite SK", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+  display: block;
+  background-image: linear-gradient(
+    to right top,
+    #8991f0,
+    #5ca3fc,
+    #00b2ff,
+    #00cdff,
+    #00e3e5,
+    #00f3aa,
+    #42fc0f,
+    #eeb005,
+    #fdfcfd
+  );
+  color: transparent;
+  background-clip: text;
+  background-size: 190%;
+  height: 35px;
+  animation: text-animation 4s infinite alternate;
 }
 @keyframes text-animation {
   0% {

@@ -9,7 +9,7 @@ import { PageRout } from "./pages/RoutsPage";
 
 export function App() {
   return (
-    <>
+    <div className="appAlign">
       <div className="burNav">
         <BurgerMenu />
       </div>
@@ -23,7 +23,7 @@ export function App() {
         <p>Copy Right @ Crystal Bro </p>
         <DateGen />
       </footer>
-    </>
+    </div>
   );
 }
 

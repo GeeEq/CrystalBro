@@ -3,11 +3,13 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  margin-top: 20px;
+  margin: 20px;
 }
 @media (min-width: 480px) {
   .bodyLinks {
     display: flex;
     flex-direction: row;
+    margin: 90px 10px 0 0px;
+    gap: 30px;
   }
 }

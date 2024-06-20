@@ -10,8 +10,8 @@ export function Navigation() {
         <div className="logo">
           <Link to={"/"} className="homeLink"></Link>
         </div>
-        <p className="navText">Realease Your Imagination</p>
       </div>
+      <p className="navText">Realease Your Imagination</p>
     </header>
   );
 }

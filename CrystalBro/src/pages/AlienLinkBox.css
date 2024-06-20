@@ -23,6 +23,7 @@
   margin: 4px;
   padding: 5px;
   z-index: -2;
+
   p {
     color: white;
     text-align: center;
@@ -33,7 +34,4 @@
     font-size: 40px;
     margin-top: 125%;
   }
-}
-.boxShine {
-  /* z-index: -2; */
 }
