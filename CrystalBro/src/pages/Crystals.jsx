@@ -1,6 +1,7 @@
 import { useData } from "../backend/FetchData";
 import { Link, useParams } from "react-router-dom";
 import "./Crystals.css";
+import { Spacer } from "./Spacer";
 
 export function Crystals() {
   const crystals = useData("crystals");
@@ -14,12 +15,16 @@ export function Crystals() {
     crystals && (
       <>
         <div className="crystalsListAddBar">
-          <p className="crystalsList">Crystals List</p>
-          <button className="addcrystals">
-            <Link to={"/addCrystals"} className="link">
-              ADD CRYSTALS
-            </Link>
-          </button>
+          <h1 className="crystalsList">Crystals</h1>
+          <Spacer />
+          <p className="descriptionText">
+            Crystal, any solid material in which the component atoms are
+            arranged in a definite pattern and whose surface regularity reflects
+            its internal symmetry.
+          </p>
+          <Spacer />
+
+          <button className="addCrystals">ADD CRYSTALS</button>
         </div>
 
         <div className="crystalsWrapper">
@@ -28,20 +33,20 @@ export function Crystals() {
               <div key={item.id} className="crystalsCard">
                 <h3>{item.name}</h3>
                 <img src={item.imgUrl} className="imgURL" />
-                <p>Type: {item.type}</p>
-                <p>Description: {item.description}</p>
-                <p>Habitat: {item.habitat}</p>
+                <p>
+                  <span>Type: </span>
+                  {item.type}
+                </p>
+                <p>
+                  <span>Description: </span>
+                  {item.description}
+                </p>
+                <p>
+                  <span>Habitat: </span>
+                  {item.habitat}
+                </p>
                 <div className="btn">
-                  {/* <button className="viewLog">
-                    <Link to={"/crystals"} className="crystalsLink">
-                      View Log
-                    </Link>
-                  </button> */}
-                  <button className="delete">
-                    <Link to={"/delete"} className="orangeLink">
-                      Delete
-                    </Link>
-                  </button>
+                  <button className="delete">Delete</button>
                 </div>
               </div>
             );

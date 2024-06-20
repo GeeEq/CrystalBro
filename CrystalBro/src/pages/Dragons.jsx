@@ -48,7 +48,6 @@ export function Dragons() {
                   <button className="delete">
                     {/* <Link to={"/delete"} className="orangeLink"> */}
                     Delete
-                    {/* </Link> */}
                   </button>
                 </div>
               </div>

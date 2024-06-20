@@ -16,9 +16,7 @@ export function Aliens() {
     aliens && (
       <>
         <div className="aliensListAddBar">
-          <div className="listAddWrapper">
-            <h1 className="aliensList">Aliens</h1>
-          </div>
+          <h1 className="aliensList">Aliens</h1>
           <Spacer />
           <p className="descriptionText">
             An alien is an extraterrestrial being from another world, typically
@@ -27,13 +25,9 @@ export function Aliens() {
             role in science fiction stories and can be viewed as either
             beneficial or hostile to humans.
           </p>
-          <Spacer className="spacer" />
+          <Spacer />
 
-          <button className="addAlien">
-            {/* <Link to={"/addAliens"} className="link"> */}
-            ADD ALIEN
-            {/* </Link> */}
-          </button>
+          <button className="addAlien">ADD ALIEN</button>
         </div>
 
         <div className="aliensWrapper">
