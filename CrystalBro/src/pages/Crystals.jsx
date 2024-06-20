@@ -1,8 +1,13 @@
 import { useData } from "../backend/FetchData";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import "./Crystals.css";
 
 export function Crystals() {
   const crystals = useData("crystals");
+  const myParams = useParams();
+  const crystalsData = useData("" + myParams.crystals);
+  console.log(crystalsData);
+  console.log(myParams);
 
   console.log(crystals);
   return (
@@ -11,8 +16,8 @@ export function Crystals() {
         <div className="crystalsListAddBar">
           <p className="crystalsList">Crystals List</p>
           <button className="addcrystals">
-            <Link to={"/crystals"} className="link">
-              ADD Crystals
+            <Link to={"/addCrystals"} className="link">
+              ADD CRYSTALS
             </Link>
           </button>
         </div>
@@ -22,16 +27,16 @@ export function Crystals() {
             return (
               <div key={item.id} className="crystalsCard">
                 <h3>{item.name}</h3>
-                <p>{item.type}</p>
-                <P>{item.description}</P>
-                <p>{item.habitat}</p>
+                <p>Type: {item.type}</p>
+                <p>Description: {item.description}</p>
+                <p>Habitat: {item.habitat}</p>
                 <p>{item.imgUrl}</p>
                 <div className="btn">
-                  <button className="viewLog">
+                  {/* <button className="viewLog">
                     <Link to={"/crystals"} className="crystalsLink">
                       View Log
                     </Link>
-                  </button>
+                  </button> */}
                   <button className="delete">
                     <Link to={"/delete"} className="orangeLink">
                       Delete
