@@ -104,7 +104,6 @@ nav ul li a:not(.active):hover {
 @media (max-width: 480px) {
   nav .burgerMenu {
     display: flex;
-    /* position: sticky; */
   }
   nav {
     display: flex;
@@ -112,7 +111,6 @@ nav ul li a:not(.active):hover {
     align-items: start;
     justify-content: flex-start;
     gap: 40px;
-    /* position: static; */
   }
   nav ul {
     display: none;
@@ -133,7 +131,6 @@ nav ul li a:not(.active):hover {
     flex-direction: column;
     justify-content: right;
     align-items: start;
-    /* position: relative; */
   }
   nav .burger-menu {
     height: 80%;
@@ -144,7 +141,6 @@ nav ul li a:not(.active):hover {
     justify-content: space-between;
     cursor: pointer;
     margin-top: 15px;
-    /* position: relative; */
   }
   .burger-bar.clicked:nth-child(1) {
     transform: rotate(45deg) translate(0.5em, 1em);

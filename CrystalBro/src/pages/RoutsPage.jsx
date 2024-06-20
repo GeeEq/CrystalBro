@@ -11,6 +11,8 @@ export function PageRout() {
         <Route path="/aliens" Component={Aliens} />
         <Route path="/dragons" Component={Dragons} />
         <Route path="/crystals" Component={Crystals} />
+        {/* <Route path="/aliens:aliens" Component={Aliens} /> */}
+
         <Route path="/" Component={Home} />
       </Routes>
     </>
