@@ -5,3 +5,9 @@
   flex-direction: column;
   margin-top: 20px;
 }
+@media (min-width: 480px) {
+  .bodyLinks {
+    display: flex;
+    flex-direction: row;
+  }
+}

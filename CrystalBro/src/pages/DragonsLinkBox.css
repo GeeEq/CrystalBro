@@ -1,7 +1,7 @@
 .dragonsBox {
   background-color: white;
   width: 355px;
-  height: 470px;
+  height: 510px;
   padding-top: 5px;
   box-sizing: border-box;
   border-radius: 5%;
@@ -9,9 +9,9 @@
 }
 .dragonsLink {
   background-image: url("../assets/dragonsLogo.jpg");
-  width: 349px;
-  height: 453px;
-  background-size: contain;
+  width: 345px;
+  height: 495px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 5%;
@@ -28,6 +28,28 @@
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    margin-top: 108%;
+    margin-top: 125%;
+  }
+}
+@media (min-width: 480px) {
+  .dragonsBox {
+    width: 357px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 5%;
+    z-index: -2;
+    margin-top: -20px;
+  }
+
+  .dragonsLink {
+    width: 340px;
+    height: 495px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: absolute;
+    margin: 3px 3px 3px 8px;
   }
 }

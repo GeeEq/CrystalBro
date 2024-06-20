@@ -1,8 +1,8 @@
 .crystalsBox {
   background-color: white;
   width: 355px;
-  height: 360px;
-  padding-top: 5px;
+  height: 510px;
+  padding: 4px 5px 5px 1px;
   box-sizing: border-box;
   border-radius: 5%;
   margin-bottom: 20px;
@@ -10,9 +10,9 @@
 }
 .crystalsLink {
   background-image: url("../assets/crystalLogo.jpg");
-  width: 349px;
-  height: 340px;
-  background-size: contain;
+  width: 348px;
+  height: 495px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 5%;
@@ -31,9 +31,14 @@
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    margin-top: 78%;
+    margin-top: 120%;
   }
 }
 .boxShine {
-  z-index: -2;
+  /* z-index: -2; */
+}
+@media (min-width: 480px) {
+  .crystalsBox {
+    width: 358px;
+  }
 }
