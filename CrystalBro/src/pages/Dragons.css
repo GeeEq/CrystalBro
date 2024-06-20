@@ -9,13 +9,7 @@
 .dragonsWrapper {
   display: flex;
   flex-wrap: wrap;
-  /* box-sizing: border-box; */
-  /* align-items: center; */
-  /* width: 100px;
-  height: 100px; */
   justify-content: center;
-  /* margin: 5vh 10vh; */
-  /* padding: 20px; */
   gap: 20px;
 }
 .dragonsCard {
@@ -43,13 +37,7 @@
 .dragonsWrapper {
   display: flex;
   flex-wrap: wrap;
-  /* box-sizing: border-box; */
-  /* align-items: center; */
-  /* width: 100px;
-    height: 100px; */
   justify-content: center;
-  /* margin: 5vh 10vh; */
-  /* padding: 20px; */
   gap: 20px;
 }
 .dragonsCard {
@@ -58,11 +46,62 @@
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  border: 1px solid white;
+  border: 1px solid rgb(196, 30, 154);
   border-radius: 15px;
   width: 40vh;
   height: auto;
   padding: 10px;
   margin: 10px;
   gap: 10px;
+}
+.addDragon {
+  padding: 8px 10px;
+  background-color: blueviolet;
+  border-style: none;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: 600;
+  text-decoration: none;
+}
+.addDragon:hover {
+  background-color: rgb(71, 11, 128);
+  color: aquamarine;
+  cursor: pointer;
+}
+.delete {
+  padding: 5px 10px;
+  font-size: larger;
+  background-color: blueviolet;
+  border-radius: 10px;
+  border-style: none;
+}
+.imgURL {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(82, 3, 75);
+}
+h3 {
+  font-size: x-large;
+}
+p {
+  font-size: larger;
+  text-align: center;
+}
+span {
+  font-weight: 800;
+}
+
+@media (min-width: 480px) {
+  .imgURL {
+    width: 310px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgb(82, 3, 75);
+  }
+  .dragonsCard {
+    width: 50vh;
+  }
 }

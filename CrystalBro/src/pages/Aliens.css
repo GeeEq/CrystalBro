@@ -6,24 +6,35 @@
   margin: 30px;
   gap: 10px;
 }
+.descriptionText {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  max-width: 1400px;
+  margin-bottom: 30px;
+  font-size: x-large;
+}
 .addAlien {
   padding: 8px 10px;
   background-color: blueviolet;
   border-style: none;
   border-radius: 10px;
+  font-size: larger;
+  font-weight: 600;
 }
 h1 {
   padding: 10px;
+  font-family: "Playwrite SK", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .addAlien:hover {
   background-color: rgb(71, 11, 128);
   color: aquamarine;
   cursor: pointer;
-}
-.link {
-  text-decoration: none;
-  color: white;
-  font-size: larger;
 }
 .aliensWrapper {
   display: flex;
@@ -50,6 +61,7 @@ h1 {
   height: 450px;
   object-fit: cover;
   border-radius: 10px;
+  border: 1px solid rgb(82, 3, 75);
 }
 .delete {
   padding: 5px 10px;
@@ -68,11 +80,15 @@ h3 {
 }
 p {
   font-size: larger;
+  text-align: center;
+}
+span {
+  font-weight: 800;
 }
 
 @media (min-width: 480px) {
   .imgURL {
-    width: 350px;
+    width: 310px;
     height: 450px;
     object-fit: cover;
     border-radius: 10px;
