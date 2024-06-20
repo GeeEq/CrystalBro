@@ -3,15 +3,32 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin: 30px;
+  gap: 10px;
 }
 .aliensWrapper {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  width: 100px;
-  height: 100px;
+  /* box-sizing: border-box; */
+  /* align-items: center; */
+  /* width: 100px;
+  height: 100px; */
   justify-content: center;
-  margin: 10px 80px;
-  padding: 20px;
+  /* margin: 5vh 10vh; */
+  /* padding: 20px; */
   gap: 20px;
+}
+.aliensCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 40vh;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  gap: 10px;
 }

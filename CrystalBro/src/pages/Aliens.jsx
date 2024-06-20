@@ -15,9 +15,9 @@ export function Aliens() {
     aliens && (
       <>
         <div className="aliensListAddBar">
-          <p className="aliensList">Aliens List</p>
+          <h2 className="aliensList">Aliens List</h2>
           <button className="addAlien">
-            <Link to={"/aliens"} className="link">
+            <Link to={"/addAliens"} className="link">
               ADD ALIEN
             </Link>
           </button>
