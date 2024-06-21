@@ -18,14 +18,20 @@ export function Aliens() {
   const [notFound, setNotFound] = useState();
   useEffect(() => {
     const url = useData + "/aliens" + id;
-    fetch(url).then((response) => {
-      if (response.status === 404) {
-        setNotFound(true);
-      }
-      return response.json();
-    });
-  });
-
+    fetch(url)
+      .then((response) => {
+        if (response.status === 404) {
+          setNotFound(true);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setAlien(data.alien);
+      });
+  }, []);
+  function deleteAlien() {
+    console.log("deleting...");
+  }
   return (
     aliens && (
       <>
@@ -64,7 +70,9 @@ export function Aliens() {
                   {item.habitat}
                 </p>
                 <div className="btn">
-                  <button className="delete">Delete</button>
+                  <button className="delete" onClick={deleteAlien}>
+                    Delete
+                  </button>
                 </div>
               </div>
             );
