@@ -22,7 +22,7 @@
   position: absolute;
   margin: 4px;
   padding: 5px;
-  z-index: -2;
+  /* z-index: 0; */
 
   p {
     color: white;

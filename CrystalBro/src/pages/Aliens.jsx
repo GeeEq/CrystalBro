@@ -1,7 +1,8 @@
 import { useData } from "../backend/FetchData";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./Aliens.css";
 import { Spacer } from "./Spacer";
+import { useEffect, useState } from "react";
 
 export function Aliens() {
   const aliens = useData("aliens");
@@ -10,8 +11,21 @@ export function Aliens() {
   const alienData = useData("" + myParams.aliens);
   console.log(alienData);
   console.log(myParams);
-
   console.log(aliens);
+
+  const { id } = useParams();
+  const [alien, setAlien] = useState();
+  const [notFound, setNotFound] = useState();
+  useEffect(() => {
+    const url = useData + "/aliens" + id;
+    fetch(url).then((response) => {
+      if (response.status === 404) {
+        setNotFound(true);
+      }
+      return response.json();
+    });
+  });
+
   return (
     aliens && (
       <>
