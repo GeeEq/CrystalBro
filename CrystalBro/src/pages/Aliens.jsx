@@ -3,8 +3,9 @@ import { useParams } from "react-router-dom";
 import "./Aliens.css";
 import { Spacer } from "./Spacer";
 import { useEffect, useState } from "react";
+import { AlienLinkBox } from "./AlienLinkBox";
 
-export function Aliens() {
+export default function Aliens() {
   const aliens = useData("aliens");
 
   const myParams = useParams();
@@ -35,6 +36,8 @@ export function Aliens() {
   return (
     aliens && (
       <>
+        <AlienLinkBox />
+
         <div className="aliensListAddBar">
           <h1 className="aliensList">Aliens</h1>
           <Spacer />

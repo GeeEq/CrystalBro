@@ -2,6 +2,7 @@ import { useData } from "../backend/FetchData";
 import { Link, useParams } from "react-router-dom";
 import "./Dragons.css";
 import { Spacer } from "./Spacer";
+import { DragonsLinkBox } from "./DragonsLinkBox";
 
 export function Dragons() {
   const dragons = useData("dragons");
@@ -15,6 +16,8 @@ export function Dragons() {
   return (
     dragons && (
       <>
+        <DragonsLinkBox />
+
         <div className="dragonsListAddBar">
           <h1 className="dragonsList">Dragons</h1>
           <Spacer />

@@ -21,7 +21,7 @@
   position: absolute;
   margin: 4px;
   padding: 5px;
-  z-index: -2;
+  z-index: 1;
 
   p {
     color: rgb(253, 253, 253);

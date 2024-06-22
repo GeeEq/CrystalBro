@@ -2,6 +2,7 @@ import { useData } from "../backend/FetchData";
 import { Link, useParams } from "react-router-dom";
 import "./Crystals.css";
 import { Spacer } from "./Spacer";
+import { CrystalsLinkBox } from "./CrystalsLinkBox";
 
 export function Crystals() {
   const crystals = useData("crystals");
@@ -14,6 +15,7 @@ export function Crystals() {
   return (
     crystals && (
       <>
+        <CrystalsLinkBox />
         <div className="crystalsListAddBar">
           <h1 className="crystalsList">Crystals</h1>
           <Spacer />

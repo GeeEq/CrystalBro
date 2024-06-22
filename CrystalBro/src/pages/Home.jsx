@@ -1,3 +1,9 @@
+import { BodyPage } from "./Body";
+
 export function Home() {
-  return <></>;
+  return (
+    <>
+      <BodyPage />
+    </>
+  );
 }

@@ -5,7 +5,10 @@
   padding-top: 5px;
   box-sizing: border-box;
   border-radius: 5%;
-  margin-bottom: 20px;
+  margin: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: -1;
 }
