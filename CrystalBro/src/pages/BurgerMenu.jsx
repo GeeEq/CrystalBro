@@ -1,5 +1,5 @@
 import "./BurgerMenu.css";
-import { useState } from "react";
+import { useRef, useState } from "react";
 // import { Navigation } from "./Navigation";
 import { Link, NavLink } from "react-router-dom";
 // import { PageRout } from "./RoutsPage";
@@ -28,7 +28,6 @@ export function BurgerMenu() {
           onClick={() => {
             updateMenu();
             setMenuOpen(!menuOpen);
-            // setMenuOpen(menuOpen);
           }}
         >
           <div className={burger_class}></div>

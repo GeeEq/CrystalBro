@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import "./Aliens.css";
 import { Spacer } from "./Spacer";
 import { useEffect, useState } from "react";
-import { AlienLinkBox } from "./AlienLinkBox";
+// import { AlienLinkBox } from "./AlienLinkBox";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function Aliens() {
   const aliens = useData("aliens");
@@ -37,12 +39,7 @@ export default function Aliens() {
   return (
     aliens && (
       <>
-        {/* <div className="alienLinkBox">
-          {" "}
-          <AlienLinkBox />
-        </div> */}
-
-        <div className="aliensListAddBar">
+        {/* <div className="aliensListAddBar">
           <h1 className="aliensList">Aliens</h1>
           <Spacer />
           <p className="descriptionText">
@@ -55,33 +52,39 @@ export default function Aliens() {
           <Spacer />
 
           <button className="addAlien">ADD ALIEN</button>
-        </div>
+        </div> */}
 
         <div className="aliensWrapper">
           {aliens.map((item) => {
             return (
-              <div key={item.id} className="aliensCard">
-                <h3>{item.name}</h3>
-                <img src={item.imgUrl} className="imgURL" />
+              <>
+                <div key={item.id} className="aliensCard">
+                  <h3>{item.name}</h3>
+                  <img src={item.imgUrl} className="imgURL" />
 
-                <p>
-                  <span>Type: </span>
-                  {item.type}
-                </p>
-                <p>
-                  <span>Description: </span>
-                  {item.description}
-                </p>
-                <p>
-                  <span>Habitat: </span>
-                  {item.habitat}
-                </p>
-                <div className="btn">
-                  <button className="delete" onClick={deleteAlien}>
-                    Delete
-                  </button>
+                  <p>
+                    <span>Type: </span>
+                    {item.type}
+                  </p>
+                  <p>
+                    <span>Description: </span>
+                    {item.description}
+                  </p>
+                  <p>
+                    <span>Habitat: </span>
+                    {item.habitat}
+                  </p>
+                  <div className="btn" key={item.id}>
+                    <button
+                      className="delete"
+                      onClick={deleteAlien}
+                      key={item.id}
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </>
             );
           })}
         </div>
