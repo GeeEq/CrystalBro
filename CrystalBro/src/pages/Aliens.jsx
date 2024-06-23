@@ -15,28 +15,32 @@ export default function Aliens() {
   console.log(aliens);
 
   const { id } = useParams();
-  const [alien, setAlien] = useState();
-  const [notFound, setNotFound] = useState();
-  useEffect(() => {
-    const url = useData + "/aliens" + id;
-    fetch(url)
-      .then((response) => {
-        if (response.status === 404) {
-          setNotFound(true);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setAlien(data.alien);
-      });
-  }, []);
+  // const [alien, setAlien] = useState();
+  // const [notFound, setNotFound] = useState();
+  // useEffect(() => {
+  //   const url = useData + "/aliens" + id;
+  //   fetch(url)
+  //     .then((response) => {
+  //       if (response.status === 404) {
+  //         setNotFound(true);
+  //       }
+  //       return response.json();
+  //     })
+  //     .then((data) => {
+  //       setAlien(data.alien);
+  //     });
+  // }, []);
+
   function deleteAlien() {
     console.log("deleting...");
   }
   return (
     aliens && (
       <>
-        <AlienLinkBox />
+        {/* <div className="alienLinkBox">
+          {" "}
+          <AlienLinkBox />
+        </div> */}
 
         <div className="aliensListAddBar">
           <h1 className="aliensList">Aliens</h1>

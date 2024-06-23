@@ -6,7 +6,7 @@
   box-sizing: border-box;
   border-radius: 5%;
   margin: 2em;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -36,5 +36,12 @@
     font-style: normal;
     font-size: 40px;
     margin-top: 125%;
+  }
+}
+@media (min-width: 480px) {
+  .alienBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

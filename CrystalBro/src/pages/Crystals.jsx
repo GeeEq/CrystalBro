@@ -15,11 +15,10 @@ export function Crystals() {
   return (
     crystals && (
       <>
-        <CrystalsLinkBox />
         <div className="crystalsListAddBar">
           <h1 className="crystalsList">Crystals</h1>
           <Spacer />
-          <p className="descriptionText">
+          <p className="descriptionText ">
             Crystal, any solid material in which the component atoms are
             arranged in a definite pattern and whose surface regularity reflects
             its internal symmetry.
@@ -29,10 +28,10 @@ export function Crystals() {
           <button className="addCrystals">ADD CRYSTALS</button>
         </div>
 
-        <div className="crystalsWrapper">
+        <div className="crystalsWrapper slideContainer">
           {crystals.map((item) => {
             return (
-              <div key={item.id} className="crystalsCard">
+              <div key={item.id} className="crystalsCard slideBlock">
                 <h3>{item.name}</h3>
                 <img src={item.imgUrl} className="imgURL" />
                 <p>

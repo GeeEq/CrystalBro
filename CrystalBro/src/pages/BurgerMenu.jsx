@@ -28,6 +28,7 @@ export function BurgerMenu() {
           onClick={() => {
             updateMenu();
             setMenuOpen(!menuOpen);
+            // setMenuOpen(menuOpen);
           }}
         >
           <div className={burger_class}></div>

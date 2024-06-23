@@ -16,7 +16,7 @@ export function Dragons() {
   return (
     dragons && (
       <>
-        <DragonsLinkBox />
+        {/* <DragonsLinkBox /> */}
 
         <div className="dragonsListAddBar">
           <h1 className="dragonsList">Dragons</h1>

@@ -1,3 +1,8 @@
+.alienLinkBox {
+  display: grid;
+  justify-content: center;
+}
+
 .aliensListAddBar {
   display: flex;
   align-items: center;
@@ -30,6 +35,7 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin-top: 2rem;
 }
 .addAlien:hover {
   background-color: rgb(71, 11, 128);
