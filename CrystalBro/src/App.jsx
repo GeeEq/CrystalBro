@@ -37,12 +37,11 @@ export function App() {
             <Route path="/" Component={Home} />
           </Routes>
         </main>
-
-        <footer>
-          <p>Copy Right @ Crystal Bro </p>
-          <DateGen />
-        </footer>
       </div>
+      <footer>
+        <p>Copy Right @ Crystal Bro </p>
+        <DateGen />
+      </footer>
     </>
   );
 }

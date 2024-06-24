@@ -59,7 +59,7 @@ export default function Aliens() {
           {aliens.map((item) => {
             return (
               <>
-                <span className="slider" id="{item.id} sliderId"></span>
+                {/* <span className="slider" id="{item.id} sliderId"></span> */}
 
                 <div key={item.id} className="aliensCard" id={item.id}>
                   <div className="innerCard">

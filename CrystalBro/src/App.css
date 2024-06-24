@@ -1,9 +1,20 @@
 footer {
+  /* text-align: center;
+  font-size: small;
+  margin: 20px 40px;
+  /* padding-bottom: 20px; */
+  /* bottom: 0;
+  display: block;
+  position: fixed;
+  align-items: center;  */
+  /* position: fixed; */
+  /* display: inline-block; */
+  bottom: 0;
   text-align: center;
   font-size: small;
-  padding-bottom: 20px;
-  /* position: static; */
-  margin-top: 19%;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
 }
 .burNav {
   opacity: 0.9;
