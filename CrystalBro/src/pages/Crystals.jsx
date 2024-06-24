@@ -28,26 +28,28 @@ export function Crystals() {
           <button className="addCrystals">ADD CRYSTALS</button>
         </div>
 
-        <div className="crystalsWrapper slideContainer">
+        <div className="crystalsWrapper" key={crystals.id}>
           {crystals.map((item) => {
             return (
-              <div key={item.id} className="crystalsCard slideBlock">
-                <h3>{item.name}</h3>
-                <img src={item.imgUrl} className="imgURL" />
-                <p>
-                  <span>Type: </span>
-                  {item.type}
-                </p>
-                <p>
-                  <span>Description: </span>
-                  {item.description}
-                </p>
-                <p>
-                  <span>Habitat: </span>
-                  {item.habitat}
-                </p>
-                <div className="btn">
-                  <button className="delete">Delete</button>
+              <div key={item.id} className="crystalsCard">
+                <div className="innerCard">
+                  <h3>{item.name}</h3>
+                  <img src={item.imgUrl} className="imgURL" />
+                  <p>
+                    <span>Type: </span>
+                    {item.type}
+                  </p>
+                  <p>
+                    <span>Description: </span>
+                    {item.description}
+                  </p>
+                  <p>
+                    <span>Habitat: </span>
+                    {item.habitat}
+                  </p>
+                  <div className="btn">
+                    <button className="delete">Delete</button>
+                  </div>
                 </div>
               </div>
             );

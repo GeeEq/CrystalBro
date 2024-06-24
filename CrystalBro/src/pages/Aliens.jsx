@@ -55,13 +55,10 @@ export default function Aliens() {
         </div>
 
         <div className="aliensWrapper" key={aliens.id}>
-          {/* <div className="sliderWrapper"> */}
           {aliens.map((item) => {
             return (
               <>
-                {/* <span className="slider" id="{item.id} sliderId"></span> */}
-
-                <div key={item.id} className="aliensCard" id={item.id}>
+                <div key={item.id} className="aliensCard">
                   <div className="innerCard">
                     <h3>{item.name}</h3>
                     <img
@@ -70,11 +67,6 @@ export default function Aliens() {
                       id="imgId"
                       alt="alien image"
                     />
-                    {/* <a
-                      href="#{item.id}  sliderId"
-                      className="button"
-                      id="{item.id }"
-                    ></a> */}
                     <p>
                       <span>Type: </span>
                       {item.type}
@@ -102,7 +94,6 @@ export default function Aliens() {
             );
           })}
         </div>
-        {/* </div> */}
       </>
     )
   );
