@@ -2,7 +2,6 @@ import { useData } from "../backend/FetchData";
 import { Link, useParams } from "react-router-dom";
 import "./Dragons.css";
 import { Spacer } from "./Spacer";
-import { DragonsLinkBox } from "./DragonsLinkBox";
 
 export function Dragons() {
   const dragons = useData("dragons");
@@ -16,9 +15,9 @@ export function Dragons() {
   return (
     dragons && (
       <>
-        {/* <DragonsLinkBox /> */}
-
         <div className="dragonsListAddBar">
+          <Spacer />
+
           <h1 className="dragonsList">Dragons</h1>
           <Spacer />
 
@@ -31,27 +30,30 @@ export function Dragons() {
           </p>
           <Spacer />
 
-          <button className="addDragon">
-            {/* <Link to={"/addDragons"} className="link"> */}
-            ADD DRAGON
-            {/* </Link> */}
-          </button>
+          <button className="addDragon">ADD DRAGON</button>
         </div>
 
-        <div className="dragonsWrapper">
+        <div className="dragonsWrapper" key={dragons.id}>
           {dragons.map((item) => {
             return (
               <div key={item.id} className="dragonsCard">
-                <h3>{item.name}</h3>
-                <img src={item.imgUrl} className="imgURL" />
-                <p>Type: {item.type}</p>
-                <p>Description: {item.description}</p>
-                <p>Habitat: {item.habitat}</p>
-                <div className="btn">
-                  <button className="delete">
-                    {/* <Link to={"/delete"} className="orangeLink"> */}
-                    Delete
-                  </button>
+                <div className="innerCard">
+                  <h3>{item.name}</h3>
+                  <img src={item.imgUrl} className="imgURL" />
+                  <p>
+                    <span>Type: </span> {item.type}
+                  </p>
+                  <p>
+                    <span>Description: </span>
+                    {item.description}
+                  </p>
+                  <p>
+                    <span>Habitat: </span>
+                    {item.habitat}
+                  </p>
+                  <div className="btn">
+                    <button className="delete">Delete</button>
+                  </div>
                 </div>
               </div>
             );

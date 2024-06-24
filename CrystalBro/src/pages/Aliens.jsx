@@ -3,9 +3,6 @@ import { useParams } from "react-router-dom";
 import "./Aliens.css";
 import { Spacer } from "./Spacer";
 import { useEffect, useState } from "react";
-// import { AlienLinkBox } from "./AlienLinkBox";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 
 export default function Aliens() {
   const aliens = useData("aliens");
@@ -40,6 +37,8 @@ export default function Aliens() {
     aliens && (
       <>
         <div className="aliensListAddBar">
+          <Spacer />
+
           <h1 className="aliensList">Aliens</h1>
           <Spacer />
           <p className="descriptionText">

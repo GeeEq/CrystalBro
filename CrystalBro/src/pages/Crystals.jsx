@@ -16,6 +16,8 @@ export function Crystals() {
     crystals && (
       <>
         <div className="crystalsListAddBar">
+          <Spacer />
+
           <h1 className="crystalsList">Crystals</h1>
           <Spacer />
           <p className="descriptionText ">

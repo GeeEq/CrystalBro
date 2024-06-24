@@ -1,10 +1,8 @@
-body {
-  width: 100%;
-  align-items: center;
-}
-
 .alienLinkBox {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+
   justify-content: center;
 }
 
@@ -40,7 +38,6 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  margin-top: 2rem;
 }
 .addAlien:hover {
   background-color: rgb(71, 11, 128);
@@ -48,17 +45,11 @@ h1 {
   cursor: pointer;
 }
 .aliensWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   gap: 20px;
   padding-bottom: 20px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 40px;
+  margin: 40px;
 }
 .aliensCard {
   display: flex;
@@ -67,10 +58,11 @@ h1 {
   align-items: center;
   transition: 1s;
   left: 0;
+  width: 380px;
+  height: 700px;
   border: 1px solid rgb(196, 30, 154);
   border-radius: 15px;
-  padding: 10px;
-  margin: 20px;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -79,10 +71,15 @@ h1 {
   transition: transform 0.5s;
 }
 .imgURL {
-  margin: 20px;
   border-radius: 10px;
   border: 1px solid rgb(82, 3, 75);
   transition: 0.7s;
+  height: 380px;
+  width: 350px;
+
+  display: flex;
+  align-items: center;
+  object-fit: cover;
 }
 button {
   padding: 10px 5px;
@@ -100,7 +97,6 @@ button {
   cursor: pointer;
 }
 h3 {
-  margin-bottom: 5px;
   font-size: x-large;
 }
 p {
@@ -110,17 +106,35 @@ span {
   font-weight: 800;
 }
 .innerCard {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 20px;
+  margin: 20px;
 }
 
 @media (min-width: 480px) {
   h1 {
-    margin-top: 55px;
+    margin-top: 60px;
+  }
+  .aliensWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .aliensCard {
+    width: 50vh;
+    height: 100%;
+    align-items: center;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   h1 {
     margin: 0;
   }

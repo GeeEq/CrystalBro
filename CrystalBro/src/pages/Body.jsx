@@ -9,10 +9,27 @@ export function BodyPage() {
   return (
     <>
       <div className="bodyLinks">
-        <Spacer />
-        <AlienLinkBox />
-        <DragonsLinkBox />
-        <CrystalsLinkBox />
+        <div className="display">
+          <Spacer />
+          <AlienLinkBox />
+          <div className="hideSpacer">
+            <Spacer />
+          </div>
+        </div>
+
+        <div className="display">
+          <Spacer />
+          <DragonsLinkBox />
+          <div className="hideSpacer">
+            <Spacer />
+          </div>
+        </div>
+
+        <div className="display">
+          <Spacer />
+          <CrystalsLinkBox />
+          <Spacer />
+        </div>
       </div>
     </>
   );

@@ -5,7 +5,7 @@ import { Spacer } from "./Spacer";
 export function AlienLinkBox() {
   return (
     <>
-      <Spacer />
+      {/* <Spacer /> */}
 
       <div className="alienBox">
         <div className="boxShine"></div>

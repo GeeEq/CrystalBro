@@ -11,7 +11,6 @@ export function CrystalsLinkBox() {
           <p>Crystals</p>
         </Link>
       </div>
-      <Spacer />
     </>
   );
 }

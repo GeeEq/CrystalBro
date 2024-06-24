@@ -11,7 +11,7 @@ export function DragonsLinkBox() {
           <p>Dragons</p>
         </Link>
       </div>
-      <Spacer />
+      {/* <Spacer /> */}
     </>
   );
 }
