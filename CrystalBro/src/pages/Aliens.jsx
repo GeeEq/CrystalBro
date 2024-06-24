@@ -16,7 +16,7 @@ export default function Aliens() {
   console.log(myParams);
   console.log(aliens);
 
-  const { id } = useParams();
+  // const { id } = useParams();
   // const [alien, setAlien] = useState();
   // const [notFound, setNotFound] = useState();
   // useEffect(() => {
@@ -39,7 +39,7 @@ export default function Aliens() {
   return (
     aliens && (
       <>
-        {/* <div className="aliensListAddBar">
+        <div className="aliensListAddBar">
           <h1 className="aliensList">Aliens</h1>
           <Spacer />
           <p className="descriptionText">
@@ -52,42 +52,57 @@ export default function Aliens() {
           <Spacer />
 
           <button className="addAlien">ADD ALIEN</button>
-        </div> */}
+        </div>
 
-        <div className="aliensWrapper">
+        <div className="aliensWrapper" key={aliens.id}>
+          {/* <div className="sliderWrapper"> */}
           {aliens.map((item) => {
             return (
               <>
-                <div key={item.id} className="aliensCard">
-                  <h3>{item.name}</h3>
-                  <img src={item.imgUrl} className="imgURL" />
+                <span className="slider" id="{item.id} sliderId"></span>
 
-                  <p>
-                    <span>Type: </span>
-                    {item.type}
-                  </p>
-                  <p>
-                    <span>Description: </span>
-                    {item.description}
-                  </p>
-                  <p>
-                    <span>Habitat: </span>
-                    {item.habitat}
-                  </p>
-                  <div className="btn" key={item.id}>
-                    <button
-                      className="delete"
-                      onClick={deleteAlien}
-                      key={item.id}
-                    >
-                      Delete
-                    </button>
+                <div key={item.id} className="aliensCard" id={item.id}>
+                  <div className="innerCard">
+                    <h3>{item.name}</h3>
+                    <img
+                      src={item.imgUrl}
+                      className="imgURL"
+                      id="imgId"
+                      alt="alien image"
+                    />
+                    {/* <a
+                      href="#{item.id}  sliderId"
+                      className="button"
+                      id="{item.id }"
+                    ></a> */}
+                    <p>
+                      <span>Type: </span>
+                      {item.type}
+                    </p>
+                    <p>
+                      <span>Description: </span>
+                      {item.description}
+                    </p>
+                    <p>
+                      <span>Habitat: </span>
+                      {item.habitat}
+                    </p>
+                    <div className="btn" key={item.id}>
+                      <button
+                        className="delete"
+                        onClick={deleteAlien}
+                        key={item.id}
+                      >
+                        Delete
+                      </button>
+                    </div>
                   </div>
                 </div>
               </>
             );
           })}
         </div>
+        {/* </div> */}
       </>
     )
   );

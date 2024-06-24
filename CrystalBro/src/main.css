@@ -18,6 +18,3 @@ body {
   display: flex;
   place-items: center;
 }
-
-@media (prefers-color-scheme: light) {
-}
