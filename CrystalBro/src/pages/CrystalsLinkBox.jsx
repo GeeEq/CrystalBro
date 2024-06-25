@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./CrystalsLinkBox.css";
-import { Spacer } from "./Spacer";
 
 export function CrystalsLinkBox() {
   return (

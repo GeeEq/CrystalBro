@@ -1,8 +1,6 @@
 import "./BurgerMenu.css";
 import { useRef, useState } from "react";
-// import { Navigation } from "./Navigation";
 import { Link, NavLink } from "react-router-dom";
-// import { PageRout } from "./RoutsPage";
 
 export function BurgerMenu() {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");

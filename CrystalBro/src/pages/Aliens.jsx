@@ -1,8 +1,9 @@
 import { useData } from "../backend/FetchData";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./Aliens.css";
 import { Spacer } from "./Spacer";
 import { useEffect, useState } from "react";
+import { Toaster } from "@blueprintjs/core";
 
 export default function Aliens() {
   const aliens = useData("aliens");
@@ -13,26 +14,28 @@ export default function Aliens() {
   console.log(myParams);
   console.log(aliens);
 
-  // const { id } = useParams();
-  // const [alien, setAlien] = useState();
-  // const [notFound, setNotFound] = useState();
-  // useEffect(() => {
-  //   const url = useData + "/aliens" + id;
-  //   fetch(url)
-  //     .then((response) => {
-  //       if (response.status === 404) {
-  //         setNotFound(true);
-  //       }
-  //       return response.json();
-  //     })
-  //     .then((data) => {
-  //       setAlien(data.alien);
-  //     });
-  // }, []);
+  // const navigate = useNavigate();
+  // const id = useParams();
+  const [alien, setAlien] = useState();
 
-  function deleteAlien() {
-    console.log("deleting...");
-  }
+  const deleteAlien = (id) => {
+    fetch(`http://localhost:3000/aliens/${id}`, {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((response) => response.json())
+      .then(() => {
+        setAlien((values) => {
+          return values.filter((item) => item.id !== id);
+        });
+        Toaster.show({
+          message: "User deleted successfully",
+          intent: "success",
+          timeout: 3000,
+        });
+      });
+  };
+
   return (
     aliens && (
       <>
@@ -58,7 +61,7 @@ export default function Aliens() {
             return (
               <>
                 <div key={item.id} className="aliensCard">
-                  <div className="innerCard">
+                  <div className="innerCard" key={item.id}>
                     <h3>{item.name}</h3>
                     <img
                       src={item.imgUrl}
@@ -81,8 +84,7 @@ export default function Aliens() {
                     <div className="btn" key={item.id}>
                       <button
                         className="delete"
-                        onClick={deleteAlien}
-                        key={item.id}
+                        onClick={() => deleteAlien(item.id)}
                       >
                         Delete
                       </button>

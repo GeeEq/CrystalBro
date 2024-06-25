@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import "../pages/Body.css";
 import { AlienLinkBox } from "./AlienLinkBox";
 import { DragonsLinkBox } from "./DragonsLinkBox";

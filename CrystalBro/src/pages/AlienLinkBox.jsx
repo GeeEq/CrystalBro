@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./AlienLinkBox.css";
-import { Spacer } from "./Spacer";
 
 export function AlienLinkBox() {
   return (
