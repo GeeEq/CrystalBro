@@ -36,7 +36,11 @@ export function Crystals() {
               <div key={item.id} className="crystalsCard">
                 <div className="innerCard">
                   <h3>{item.name}</h3>
-                  <img src={item.imgUrl} className="imgURL" />
+                  <img
+                    src={item.imgUrl}
+                    className="imgURL"
+                    alt="crystal image"
+                  />
                   <p>
                     <span>Type: </span>
                     {item.type}

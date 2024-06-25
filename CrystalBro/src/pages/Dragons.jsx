@@ -39,7 +39,11 @@ export function Dragons() {
               <div key={item.id} className="dragonsCard">
                 <div className="innerCard">
                   <h3>{item.name}</h3>
-                  <img src={item.imgUrl} className="imgURL" />
+                  <img
+                    src={item.imgUrl}
+                    className="imgURL"
+                    alt="dragon image"
+                  />
                   <p>
                     <span>Type: </span> {item.type}
                   </p>
