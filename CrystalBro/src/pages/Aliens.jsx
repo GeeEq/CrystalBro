@@ -22,18 +22,18 @@ export default function Aliens() {
     fetch(`http://localhost:3000/aliens/${id}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
-    })
-      .then((response) => response.json())
-      .then(() => {
-        setAlien((values) => {
-          return values.filter((item) => item.id !== id);
-        });
-        Toaster.show({
-          message: "User deleted successfully",
-          intent: "success",
-          timeout: 3000,
-        });
-      });
+    });
+    // .then((response) => response.json())
+    // .then(() => {
+    //   setAlien((values) => {
+    //     return values.filter((item) => item.id !== id);
+    //   });
+    //   Toaster.show({
+    //     message: "User deleted successfully",
+    //     intent: "success",
+    //     timeout: 3000,
+    //   });
+    // });
   };
 
   return (
@@ -61,7 +61,7 @@ export default function Aliens() {
             return (
               <>
                 <div key={item.id} className="aliensCard">
-                  <div className="innerCard" key={item.id}>
+                  <div className="innerCard">
                     <h3>{item.name}</h3>
                     <img
                       src={item.imgUrl}

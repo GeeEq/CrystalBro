@@ -34,7 +34,10 @@
     margin-top: 120%;
   }
 }
-
+.crystalBox:hover {
+  box-shadow: 5px 5px 15px rgb(196, 30, 154);
+  transition: transform 0.5s;
+}
 @media (min-width: 480px) {
   .crystalsBox {
     width: 358px;

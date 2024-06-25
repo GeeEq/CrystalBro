@@ -12,6 +12,10 @@
   position: relative;
   z-index: -1;
 }
+.alienBox:hover {
+  box-shadow: 5px 5px 15px rgb(196, 30, 154);
+  transition: transform 0.5s;
+}
 .alienLink {
   background-image: url("../assets/alienLogo.jpg");
   width: 349px;
