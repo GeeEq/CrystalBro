@@ -38,5 +38,7 @@
 @media (min-width: 480px) {
   .crystalsBox {
     width: 358px;
+    margin: 0;
+    padding: 0;
   }
 }

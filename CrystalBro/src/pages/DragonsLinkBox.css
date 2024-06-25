@@ -5,7 +5,8 @@
   padding-top: 5px;
   box-sizing: border-box;
   border-radius: 5%;
-  z-index: -2;
+  position: relative;
+  z-index: -1;
 }
 .dragonsLink {
   background-image: url("../assets/dragonsLogo.jpg");
@@ -19,7 +20,7 @@
   text-decoration: none;
   position: absolute;
   margin: 4px;
-  /* padding: 5px; */
+  padding: 5px;
   p {
     color: white;
     text-align: center;

@@ -10,7 +10,9 @@ export function BodyPage() {
     <>
       <div className="bodyLinks">
         <div className="display">
-          <Spacer />
+          <div className="alienAlign">
+            <Spacer />
+          </div>
           <AlienLinkBox />
           <div className="hideSpacer">
             <Spacer />
@@ -18,7 +20,10 @@ export function BodyPage() {
         </div>
 
         <div className="display">
-          <Spacer />
+          <div className="dragonAlign">
+            <Spacer />
+          </div>
+
           <DragonsLinkBox />
           <div className="hideSpacer">
             <Spacer />
@@ -26,7 +31,9 @@ export function BodyPage() {
         </div>
 
         <div className="display">
-          <Spacer />
+          <div className="crystalAlign">
+            <Spacer />
+          </div>
           <CrystalsLinkBox />
           <Spacer />
         </div>

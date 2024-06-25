@@ -21,7 +21,7 @@ export function BurgerMenu() {
     setIsMenuClicked(!isMenuClicked);
   };
   return (
-    <div style={{ width: "100%", height: "100hv" }}>
+    <div style={{ width: "100%", height: "100hv" }} className="fullNavBar">
       <nav>
         <div
           className="burger-menu"

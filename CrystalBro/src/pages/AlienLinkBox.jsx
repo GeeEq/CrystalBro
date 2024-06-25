@@ -5,8 +5,6 @@ import { Spacer } from "./Spacer";
 export function AlienLinkBox() {
   return (
     <>
-      {/* <Spacer /> */}
-
       <div className="alienBox">
         <div className="boxShine"></div>
         <Link to={"/aliens"} className="alienLink">

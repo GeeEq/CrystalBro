@@ -1,11 +1,8 @@
-// import { useState } from "react";
 import Aliens from "./pages/Aliens";
 import "./App.css";
 import { Navigation } from "./pages/Navigation";
-import { BodyPage } from "./pages/Body";
 import { DateGen } from "./pages/DateGenerator";
 import { BurgerMenu } from "./pages/BurgerMenu";
-// import { PageRout } from "./pages/RoutsPage";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Dragons } from "./pages/Dragons";
 import { Home } from "./pages/Home";
@@ -26,7 +23,6 @@ export function App() {
           <Navigation />
 
           <Routes>
-            {/* <PageRout /> */}
             <Route path="/aliens" Component={Aliens} />
             <Route path="/dragons" Component={Dragons} />
             <Route path="/crystals" Component={Crystals} />

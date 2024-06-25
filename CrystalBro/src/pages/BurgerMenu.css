@@ -2,7 +2,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* .fullNavBar {
+  position: absolute;
+  z-index: 1;
+} */
 .active {
   background-color: blueviolet;
 }
@@ -16,6 +19,7 @@ nav {
   padding: 0.3em 0.5em 0.7em 0.7em;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 .burger-menu {
   height: 80%;
@@ -41,7 +45,6 @@ nav {
   background-color: #13112c;
   position: absolute;
   top: 0;
-  z-index: -1;
   border-radius: 10px;
 }
 .menu_class {
