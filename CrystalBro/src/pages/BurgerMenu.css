@@ -63,6 +63,9 @@ nav {
   display: inherit;
   position: fixed;
 }
+.pageLink {
+  /* margin: 10px; */
+}
 nav ul {
   display: flex;
   justify-content: center;
@@ -129,6 +132,7 @@ nav ul li a:not(.active):hover {
     text-align: center;
     margin-left: -25px;
     padding: 5px;
+    margin-right: 20px;
   }
   nav ul.open {
     display: flex;
@@ -171,7 +175,7 @@ nav ul li a:not(.active):hover {
     display: none;
   }
   nav ul li {
-    margin: 1.5rem 0.5rem;
+    /* margin: 1.5rem 0.5rem; */
     width: 140%;
     text-align: center;
     margin: 1.5rem 1rem 1.5rem -25px;
@@ -179,6 +183,7 @@ nav ul li a:not(.active):hover {
   }
   nav ul li a {
     padding: 5px;
+    /* margin: 15px; */
   }
 
   nav {
@@ -209,10 +214,11 @@ nav ul li a:not(.active):hover {
     align-items: center;
     max-width: 100%;
     position: fixed;
+    padding-right: 30px;
     /* top: 0; */
   }
   nav ul li a {
-    margin: 15px;
-    padding: 10px;
+    margin: 5px;
+    padding: 20px;
   }
 }

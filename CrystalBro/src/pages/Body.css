@@ -17,55 +17,78 @@
   justify-content: center;
   flex-direction: column;
 }
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: "Playwrite SK", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-top: 2%;
+  margin-bottom: 20px;
+}
+.textDescr {
+  color: white;
+  text-align: center;
+  font-family: "Playwrite SK", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  width: 80%;
+  margin: auto;
+}
 @media (min-width: 480px) {
   .bodyLinks {
-    min-width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 90px;
+    margin-top: 60px;
     gap: 10px;
+  }
+  section {
+    margin-top: 90px;
   }
   .hideSpacer {
     display: contents;
     align-items: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* margin-bottom: 20px; */
   }
   .display {
     display: flex;
     flex-direction: column;
-    /* grid-template-rows: 100px 1fr; */
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* height: 800px; */
   }
-  .alienAlign {
-    margin-bottom: -0px;
-    /* padding-top: 25px; */
-  }
+
   .dragonAlign {
     margin-bottom: 20px;
     padding-bottom: -25px;
-  }
-  .crystalAlign {
-    margin-top: 15px;
-    padding-bottom: -15px;
   }
 }
 @media (min-width: 1200px) {
   .bodyLinks {
     width: 100%;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     /* margin: 90px ; */
-    /* gap: 30px; */
+    gap: 30px;
+  }
+}
+@media (min-width: 1500px) {
+  .bodyLinks {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
   }
 }
