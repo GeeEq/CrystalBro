@@ -58,9 +58,7 @@ export default function Aliens() {
           <button className="addAlien" onClick={() => setIsOpen(true)}>
             ADD ALIEN
           </button>
-          <AddAliens open={isOpen} onClose={() => setIsOpen(false)}>
-            Open Modal
-          </AddAliens>
+          <AddAliens open={isOpen} onClose={() => setIsOpen(false)} />
         </div>
 
         <div className="aliensWrapper" key={aliens.id}>
