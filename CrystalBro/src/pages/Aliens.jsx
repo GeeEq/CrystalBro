@@ -21,7 +21,7 @@ export default function Aliens() {
   const deleteAlien = (id) => {
     fetch(`http://localhost:3000/aliens/${id}`, {
       method: "DELETE",
-      headers: { "Content-Type": "application/json" },
+      // headers: { "Content-Type": "application/json" },
     });
     // .then((response) => response.json())
     // .then(() => {
