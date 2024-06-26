@@ -1,2 +1,15 @@
-button {
+label {
+  color: black;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+input {
+  width: 20vw;
+  height: 30px;
+  background-color: aliceblue;
 }
