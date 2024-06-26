@@ -33,3 +33,6 @@ button {
   border-style: none;
   letter-spacing: 2px;
 }
+.addBtn {
+  padding: 10px 20px;
+}

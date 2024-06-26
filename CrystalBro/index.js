@@ -31,8 +31,6 @@ app.use(cors());
 app.use(express.json());
 
 import { MongoClient } from "mongodb";
-import { request } from "http";
-// import { request } from "http";
 
 const connectionString =
   "mongodb+srv://sielaleis:mangojerry@cluster0.qsim4gh.mongodb.net/";
@@ -41,7 +39,6 @@ const client = new MongoClient(connectionString);
 
 let conn;
 let db;
-// let database;
 
 async function connect() {
   try {
@@ -97,54 +94,6 @@ app.delete("/CrystalBro", (request, response) => {
   });
   response.json("Deleted Seccessfully");
 });
-
-// app.post("/aliens/create_user", async (req, res) => {
-//   try {
-//     await connect();
-//     const collection = db.collection("aliens");
-//     const newUser = req.body;
-//     const result = await collection.insertOne(newUser);
-//     res.json({ message: "User created!" });
-//   } catch (e) {
-//     console.log(e);
-//   }
-// });
-// app.post("/crystals/create_user", async (req, res) => {
-//   try {
-//     await connect();
-//     const collection = db.collection("crystals");
-//     const newUser = req.body;
-//     const result = await collection.insertOne(newUser);
-//     res.json({ message: "User created!" });
-//   } catch (e) {
-//     console.log(e);
-//   }
-// });
-// app.post("/dragons/create_user", async (req, res) => {
-//   try {
-//     await connect();
-//     const collection = db.collection("dragons");
-//     const newUser = req.body;
-//     const result = await collection.insertOne(newUser);
-//     res.json({ message: "User created!" });
-//   } catch (e) {
-//     console.log(e);
-//   }
-// });
-
-// app.delete("/users/:id", async (req, res) => {
-//   try {
-//     await connect();
-//     let objectId = new ObjectId(req.params.id);
-//     let collection = await db.collection("users");
-//     await collection.deleteOne({
-//       _id: objectId,
-//     });
-//     res.json({ message: " User deleted!" });
-//   } catch (e) {
-//     res.json(e);
-//   }
-// });
 
 const startCallback = () => {
   console.log("Application started...");

@@ -1,5 +1,6 @@
 import React from "react";
 import "./AddAliens.css";
+import { Component } from "react";
 
 const Modal_STYLES = {
   position: "fixed",
@@ -23,6 +24,30 @@ const OVERLAY_STYLES = {
 
 export function AddAliens({ open, children, onClose }) {
   if (!open) return null;
+  // class App extends Components {
+  //   constructor(props) {
+  //     super(props);
+  //     this.state = {
+  //       aliens: [],
+  //     };
+  //   }
+
+  // API_URL = "http://localhost:5038/";
+
+  // componentDidMount() {
+  //   this.refreshAliens();
+  // }
+
+  // async refreshAliens() {
+  //   fetch(this.API_URL + "/aliens")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       this.setState({ aliens: data });
+  //     });
+  // }
+
+  // render() {
+
   return (
     <>
       <div style={OVERLAY_STYLES} />
@@ -48,9 +73,12 @@ export function AddAliens({ open, children, onClose }) {
           <label for="habitat">Habitat:</label>
           <input type="text" id="habitat" name="habitat"></input>
         </form>
-        <button onClick={onClose}>Close</button>
-        {children}
+        <button onClick={onClose} className="addBtn">
+          Add
+        </button>
       </div>
     </>
   );
+  // }
+  // }
 }

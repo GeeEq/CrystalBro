@@ -1,12 +1,11 @@
 import { useData } from "../backend/FetchData";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./Aliens.css";
 import { Spacer } from "./Spacer";
 import { useEffect, useState } from "react";
-import { Toaster } from "@blueprintjs/core";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+
+import { Routes, Route } from "react-router-dom";
 import { AddAliens } from "./AddAliens";
-// import { Link } from "react-router-dom";
 
 export default function Aliens() {
   const aliens = useData("aliens");
@@ -17,26 +16,20 @@ export default function Aliens() {
   console.log(myParams);
   console.log(aliens);
 
-  // const navigate = useNavigate();
-  // const id = useParams();
   const [alien, setAlien] = useState();
 
-  const deleteAlien = (id) => {
-    fetch(`http://localhost:5038/aliens/${id}`, {
-      method: "DELETE",
-    })
-      .then((response) => response.json())
-      .then(() => {
-        setAlien((values) => {
-          return values.filter((item) => item.id !== id);
-        });
-        Toaster.show({
-          message: "User deleted successfully",
-          intent: "success",
-          timeout: 3000,
-        });
+  const deleteAlien = async (_id) => {
+    try {
+      await fetch(`http://localhost:5038/aliens/${_id}`, {
+        method: "DELETE",
       });
+      const updatedUsers = aliens.filter((alien) => alien._id !== _id);
+      setAlien(updatedUsers);
+    } catch (error) {
+      console.error("Error deleting user:", error);
+    }
   };
+
   const [isOpen, setIsOpen] = useState(false);
   return (
     aliens && (
@@ -87,10 +80,13 @@ export default function Aliens() {
                       {item.habitat}
                     </p>
                     <div className="btn" key={item.id}>
-                      <button
+                      <button className="delete" onClick={deleteAlien}>
+                        {/* <button
                         className="delete"
-                        onClick={() => deleteAlien(item.id)}
+                        onClick={() => onDelete(aliens.id)}
                       >
+                        Delete
+                      </button> */}
                         Delete
                       </button>
                     </div>
@@ -101,7 +97,6 @@ export default function Aliens() {
           })}
         </div>
         <Routes>
-          {" "}
           <Route path="/addAliens" Component={AddAliens} />
         </Routes>
       </>
