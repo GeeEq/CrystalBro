@@ -1,25 +1,3 @@
-// const express = require("express");
-// const Mongoclient = require("mongodb").MongoClient;
-// const cors = require("cors");
-// const multer = require("multer");
-// const mongodb = require("mongodb");
-// const app = express();
-// app.use(cors());
-// app.use(express.json());
-
-// const CONNECTION_STRING =
-//   "mongodb+srv://sielaleis:masapiqua589@cluster0.qsim4gh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
-// const DATABASE = "crystalbro";
-// let database;
-
-// app.listen(5038, () => {
-//   Mongoclient.connect(CONNECTION_STRING, (error, client) => {
-//     database = client.db(CrystalBro);
-//     console.log("Mongo DB Connection Seccessful");
-//   });
-// });
-
 import express, { json } from "express";
 import cors from "cors";
 import mongodb from "mongodb";
@@ -88,11 +66,23 @@ app.post("/aliens/AddAlien", multer().none(), (request, response) => {
   });
 });
 
-app.delete("/CrystalBro", (request, response) => {
-  db.collection("aliens").deletOne({
-    id: request.query.id,
-  });
-  response.json("Deleted Seccessfully");
+// app.delete("/CrystalBro", (request, response) => {
+//   db.collection("aliens").deletOne({
+//     id: request.query.id,
+//   });
+//   response.json("Deleted Seccessfully");
+// });
+
+app.delete("/aliens/:id", (req, res) => {
+  const aliens = aliens[req.params.id];
+
+  if (!aliens) {
+    return res.sendStatus(404);
+  }
+
+  delete aliens[req.params.id];
+
+  res.sendStatus(200);
 });
 
 const startCallback = () => {

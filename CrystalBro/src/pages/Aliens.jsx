@@ -18,12 +18,12 @@ export default function Aliens() {
 
   const [alien, setAlien] = useState();
 
-  const deleteAlien = async (_id) => {
+  const deleteAlien = async (id) => {
     try {
-      await fetch(`http://localhost:5038/aliens/${_id}`, {
+      await fetch(`http://localhost:5038/CrystalBro/${id}`, {
         method: "DELETE",
       });
-      const updatedUsers = aliens.filter((alien) => alien._id !== _id);
+      const updatedUsers = aliens.filter((alien) => alien.id !== id);
       setAlien(updatedUsers);
     } catch (error) {
       console.error("Error deleting user:", error);
@@ -80,15 +80,15 @@ export default function Aliens() {
                       {item.habitat}
                     </p>
                     <div className="btn" key={item.id}>
-                      <button className="delete" onClick={deleteAlien}>
-                        {/* <button
+                      {/* <button className="delete" onClick={deleteAlien}> */}
+                      <button
                         className="delete"
-                        onClick={() => onDelete(aliens.id)}
+                        onClick={() => deleteAlien(item._id)}
                       >
                         Delete
-                      </button> */}
-                        Delete
                       </button>
+                      {/* Delete
+                      </button> */}
                     </div>
                   </div>
                 </div>
