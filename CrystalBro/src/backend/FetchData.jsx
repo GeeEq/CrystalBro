@@ -5,7 +5,7 @@ export function useData(url) {
 
   useEffect(() => {
     async function extractData() {
-      const response = await fetch(`http://localhost:3000/${url}`);
+      const response = await fetch(`http://localhost:5038/${url}`);
       const result = await response.json();
       setMyData(result);
     }

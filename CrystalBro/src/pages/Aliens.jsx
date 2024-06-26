@@ -1,9 +1,12 @@
 import { useData } from "../backend/FetchData";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import "./Aliens.css";
 import { Spacer } from "./Spacer";
 import { useEffect, useState } from "react";
 import { Toaster } from "@blueprintjs/core";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { AddAliens } from "./AddAliens";
+// import { Link } from "react-router-dom";
 
 export default function Aliens() {
   const aliens = useData("aliens");
@@ -19,23 +22,22 @@ export default function Aliens() {
   const [alien, setAlien] = useState();
 
   const deleteAlien = (id) => {
-    fetch(`http://localhost:3000/aliens/${id}`, {
+    fetch(`http://localhost:5038/aliens/${id}`, {
       method: "DELETE",
-      // headers: { "Content-Type": "application/json" },
-    });
-    // .then((response) => response.json())
-    // .then(() => {
-    //   setAlien((values) => {
-    //     return values.filter((item) => item.id !== id);
-    //   });
-    //   Toaster.show({
-    //     message: "User deleted successfully",
-    //     intent: "success",
-    //     timeout: 3000,
-    //   });
-    // });
+    })
+      .then((response) => response.json())
+      .then(() => {
+        setAlien((values) => {
+          return values.filter((item) => item.id !== id);
+        });
+        Toaster.show({
+          message: "User deleted successfully",
+          intent: "success",
+          timeout: 3000,
+        });
+      });
   };
-
+  const [isOpen, setIsOpen] = useState(false);
   return (
     aliens && (
       <>
@@ -53,7 +55,12 @@ export default function Aliens() {
           </p>
           <Spacer />
 
-          <button className="addAlien">ADD ALIEN</button>
+          <button className="addAlien" onClick={() => setIsOpen(true)}>
+            ADD ALIEN
+          </button>
+          <AddAliens open={isOpen} onClose={() => setIsOpen(false)}>
+            Open Modal
+          </AddAliens>
         </div>
 
         <div className="aliensWrapper" key={aliens.id}>
@@ -95,6 +102,10 @@ export default function Aliens() {
             );
           })}
         </div>
+        <Routes>
+          {" "}
+          <Route path="/addAliens" Component={AddAliens} />
+        </Routes>
       </>
     )
   );
