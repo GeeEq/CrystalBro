@@ -80,15 +80,12 @@ export default function Aliens() {
                       {item.habitat}
                     </p>
                     <div className="btn" key={item.id}>
-                      {/* <button className="delete" onClick={deleteAlien}> */}
                       <button
                         className="delete"
                         onClick={() => deleteAlien(item._id)}
                       >
                         Delete
                       </button>
-                      {/* Delete
-                      </button> */}
                     </div>
                   </div>
                 </div>

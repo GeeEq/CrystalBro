@@ -1,0 +1,176 @@
+[{
+  "_id": {
+    "$oid": "667bb6c83d74a7b503a8013f"
+  },
+  "id": 1,
+  "name": "Ade",
+  "type": "quartz",
+  "description": "sharp edges",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/magical-crystal-with-swirling-colors-digital-art-style-illustration_812426-6499.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb6eb3d74a7b503a80140"
+  },
+  "id": 2,
+  "name": "Der",
+  "type": "quartz",
+  "description": "sharp edges",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/magical-crystal-with-swirling-colors-digital-art-style-illustration_812426-6362.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb6fb3d74a7b503a80141"
+  },
+  "id": 3,
+  "name": "Fret",
+  "type": "quartz",
+  "description": "sharp edges",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/magical-crystal-with-swirling-colors-digital-art-style-illustration_812426-6421.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb7163d74a7b503a80142"
+  },
+  "id": 4,
+  "name": "Aqer",
+  "type": "quartz",
+  "description": "shape shifter",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/illustration-crystal-clear-beautiful-gemstone-ai-generated-content_899027-1821.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb7233d74a7b503a80143"
+  },
+  "id": 5,
+  "name": "Cil",
+  "type": "mixed",
+  "description": "civilization",
+  "habitat": "mountains",
+  "imgUrl": "https://images.nightcafe.studio/jobs/LD5SoxTN83qB376Fjbya/LD5SoxTN83qB376Fjbya.jpg?tr=w-1600,c-at_max"
+},
+{
+  "_id": {
+    "$oid": "667bb7303d74a7b503a80144"
+  },
+  "id": 6,
+  "name": "Fert",
+  "type": "mixed",
+  "description": "civilization",
+  "habitat": "mountains",
+  "imgUrl": "https://images.nightcafe.studio/jobs/mOi4R4DoFkZ66IDy4TUT/mOi4R4DoFkZ66IDy4TUT_8.9286x.jpg?tr=w-1600,c-at_max"
+},
+{
+  "_id": {
+    "$oid": "667bb7fd3d74a7b503a80145"
+  },
+  "id": 7,
+  "name": "Defr",
+  "type": "quartz",
+  "description": "shape shifter",
+  "habitat": "mountains",
+  "imgUrl": "https://images.nightcafe.studio/jobs/xXuO2T2rXbSh0LwlK2VI/xXuO2T2rXbSh0LwlK2VI--1--9k4yh.jpg?tr=w-1600,c-at_max"
+},
+{
+  "_id": {
+    "$oid": "667bb8093d74a7b503a80146"
+  },
+  "id": 8,
+  "name": "Qwer",
+  "type": "quartz",
+  "description": "civilization",
+  "habitat": "mountains",
+  "imgUrl": "https://images.nightcafe.studio/jobs/SWsbkWzKEAoTZzghkVYs/SWsbkWzKEAoTZzghkVYs--1--vh94e_4x.jpg?tr=w-1600,c-at_max"
+},
+{
+  "_id": {
+    "$oid": "667bb8163d74a7b503a80147"
+  },
+  "id": 9,
+  "name": "Pink",
+  "type": "quartz",
+  "description": "sharp edges",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/magical-landscape-made-amethyst-crystals_665280-14159.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb8223d74a7b503a80148"
+  },
+  "id": 10,
+  "name": "Eder",
+  "type": "quartz",
+  "description": "sharp edges",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/magical-landscape-made-amethyst-crystals_665280-14155.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb8303d74a7b503a80149"
+  },
+  "id": 11,
+  "name": "Nefrt",
+  "type": "quartz",
+  "description": "sharp edges",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/purple-crystals-amethyst-black-background-with-spotlight_872754-3566.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb8373d74a7b503a8014a"
+  },
+  "id": 12,
+  "name": "Lifg",
+  "type": "quartz",
+  "description": "shape shifter",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/brightly-colored-crystals-are-rock-dark-room-generative-ai_902639-49076.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb8783d74a7b503a8014b"
+  },
+  "id": 13,
+  "name": "Gerfty",
+  "type": "quartz",
+  "description": "shape shifter",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/close-up-crystals-with-word-crystals-it_853177-9392.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb87e3d74a7b503a8014c"
+  },
+  "id": 14,
+  "name": "Kelo",
+  "type": "quartz",
+  "description": "sharp edges",
+  "habitat": "mountains",
+  "imgUrl": "https://img.freepik.com/premium-photo/heap-crystals-jewels_717440-1435.jpg"
+},
+{
+  "_id": {
+    "$oid": "667bb8963d74a7b503a8014d"
+  },
+  "id": 15,
+  "name": "Dubner",
+  "type": "quartz",
+  "description": "shape shifter",
+  "habitat": "mountains",
+  "imgUrl": "https://cdn.pixabay.com/photo/2023/06/18/01/29/ai-generated-8071009_1280.png"
+},
+{
+  "_id": {
+    "$oid": "667bb8a63d74a7b503a8014e"
+  },
+  "id": 16,
+  "name": "Jero",
+  "type": "quartz",
+  "description": "sharp edges",
+  "habitat": "mountains",
+  "imgUrl": "https://cdn.pixabay.com/photo/2024/04/10/18/17/ai-generated-8688566_1280.jpg"
+}]
