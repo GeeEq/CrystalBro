@@ -23,7 +23,7 @@ export function App() {
           <Navigation />
 
           <Routes>
-            <Route path="/aliens" Component={Aliens} />
+            <Route path="/aliens/" Component={Aliens} />
             <Route path="/dragons" Component={Dragons} />
             <Route path="/crystals" Component={Crystals} />
             <Route path="/addAliens" Component={AddAliens} />

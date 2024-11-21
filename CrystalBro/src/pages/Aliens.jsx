@@ -1,34 +1,40 @@
-import { useData } from "../backend/FetchData";
+// import { useData } from "../backend/FetchData";
 import { useParams } from "react-router-dom";
 import "./Aliens.css";
 import { Spacer } from "./Spacer";
 import { useEffect, useState } from "react";
-
+import axios from "axios"
 import { Routes, Route } from "react-router-dom";
 import { AddAliens } from "./AddAliens";
 
 export default function Aliens() {
-  const aliens = useData("aliens");
-
+  const [aliens, setAliens] = useState([]);
   const myParams = useParams();
-  const alienData = useData("" + myParams.aliens);
-  console.log(alienData);
-  console.log(myParams);
-  console.log(aliens);
 
-  const [alien, setAlien] = useState();
+  useEffect(() => {
+    axios
+      .get("/aliens")
+      .then((response) => {
+        if (Array.isArray(response.data)) {
+          setAliens(response.data); 
+        } else {
+          console.error("API did not return an array:", response.data);
+          setAliens([]); 
+        }
+      })
+      .catch((error) => console.error("Error fetching aliens:", error));
+  }, []);
+  
 
-  const deleteAlien = async (id) => {
-    try {
-      await fetch(`mongodb+srv://sielaleis:mangojerry@cluster0.qsim4gh.mongodb.net/${id}`, {
-        method: "DELETE",
-      });
-      const updatedUsers = aliens.filter((alien) => alien.id !== id);
-      setAlien(updatedUsers);
-    } catch (error) {
-      console.error("Error deleting user:", error);
-    }
-  };
+const deleteAlien = async (id) => {
+  try {
+    await axios.delete(`/aliens/${id}`);
+    const updatedAliens = aliens.filter((alien) => alien._id !== id);
+    setAliens(updatedAliens);
+  } catch (error) {
+    console.error("Error deleting alien:", error);
+  }
+};
 
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -55,10 +61,10 @@ export default function Aliens() {
         </div>
 
         <div className="aliensWrapper" key={aliens.id}>
-          {aliens.map((item) => {
+          {Array.isArray(aliens) && aliens.map((item) => {
             return (
               <>
-                <div key={item.id} className="aliensCard">
+                <div key={item._id} className="aliensCard">
                   <div className="innerCard">
                     <h3>{item.name}</h3>
                     <img
@@ -94,7 +100,7 @@ export default function Aliens() {
           })}
         </div>
         <Routes>
-          <Route path="/addAliens" Component={AddAliens} />
+          <Route path="/addAliens" element={AddAliens} />
         </Routes>
       </>
     )

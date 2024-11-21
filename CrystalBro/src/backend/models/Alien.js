@@ -1,11 +1,11 @@
 const mangoose = require("mangoose");
 
 const alienSchema = new mangoose.Schema({
-    name: String,
-    type: String,
-    description: String,
-    habitat: String,
-    imgUrl: URL
+    name: {type: String, required: true},
+    type: {type: String, required: true},
+    description: {type: String, required: true},
+    habitat: {type: String, required: true},
+    imgUrl: {type: String, required: true}
 });
 
 module.exports = mangoose.model("Alien", alienSchema)
