@@ -20,7 +20,7 @@ export default function Aliens() {
 
   const deleteAlien = async (id) => {
     try {
-      await fetch(`http://localhost:5038/CrystalBro/${id}`, {
+      await fetch(`mongodb+srv://sielaleis:mangojerry@cluster0.qsim4gh.mongodb.net/${id}`, {
         method: "DELETE",
       });
       const updatedUsers = aliens.filter((alien) => alien.id !== id);
