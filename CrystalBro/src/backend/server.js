@@ -10,3 +10,15 @@ mongoose.connect("mongodb+srv://sielaleis:mangojerry@cluster0.qsim4gh.mongodb.ne
   useUnifiedTopology: true,
 });
 
+const Alien = require(".model/Alien");
+
+app.get("/aliens", async (req, res) => {
+    try{
+        const aliens = await Alien.find();
+        res.json(aliens);
+    } catch (error) {
+        console.log.error(error);
+        res.status(500).send("Server Error")
+    }
+})
+
